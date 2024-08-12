@@ -13,6 +13,21 @@ import meutiaTiga from "./CutNyakMeutia/gambarTiga.jpg";
 import singaMangarajaSatu from "./SingamangarajaXII/gambarSatu.jpeg";
 import singaMangarajaDua from "./SingamangarajaXII/gambarDua.jpeg";
 import singaMangarajaTiga from "./SingamangarajaXII/gambarTiga.jpeg";
+import SoekarnoSatu from "./Soekarno/GambarSatu.jpg";
+import SoekarnoDua from "./Soekarno/GambarDua.jpg";
+import SoekarnoTiga from "./Soekarno/GambarTiga.jpg";
+import HattaSatu from "./MohammadHatta/GambarSatu.jpg";
+import HattaDua from "./MohammadHatta/GambarDua.jpg";
+import HattaTiga from "./MohammadHatta/GambarTiga.jpg";
+import HasanuddinSatu from "./SultanHasanuddin/GambarSatu.jpg";
+import HasanuddinDua from "./SultanHasanuddin/GambarDua.jpg";
+import HasanuddinTiga from "./SultanHasanuddin/GambarTiga.jpg";
+import DiponegoroSatu from "./PangeranDiponegoro/GambarSatu.jpg";
+import DiponegoroDua from "./PangeranDiponegoro/GambarDua.jpg";
+import DiponegoroTiga from "./PangeranDiponegoro/GambarTiga.jpg";
+import CutNyakDienSatu from "./CutNyakDien/GambarSatu.jpg";
+import CutNyakDienDua from "./CutNyakDien/GambarDua.jpg";
+import CutNyakDienTiga from "./CutNyakDien/GambarTiga.jpg";
 
 const Biografi = [
   {
@@ -38,9 +53,9 @@ const Biografi = [
       pencapaianLima:
         "Mendapat gelar Pahlawan Proklamasi oleh pemerintah Indonesia.",
     },
-    gambarSatu: "",
-    gambarDua: "",
-    gambarTiga: "",
+    gambarSatu: SoekarnoSatu,
+    gambarDua: SoekarnoDua,
+    gambarTiga: SoekarnoTiga,
   },
   {
     id: 2,
@@ -63,9 +78,9 @@ const Biografi = [
       pencapaianLima:
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
     },
-    gambarSatu: "",
-    gambarDua: "",
-    gambarTiga: "",
+    gambarSatu: HattaSatu,
+    gambarDua: HattaDua,
+    gambarTiga: HattaTiga,
   },
   {
     id: 3,
@@ -92,9 +107,9 @@ const Biografi = [
       pencapaianEmpat:
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
     },
-    gambarSatu: "",
-    gambarDua: "",
-    gambarTiga: "",
+    gambarSatu: HasanuddinSatu,
+    gambarDua: HasanuddinDua,
+    gambarTiga: HasanuddinTiga,
   },
 
   {
@@ -122,9 +137,9 @@ const Biografi = [
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
       pencapaianLima: "",
     },
-    gambarSatu: "",
-    gambarDua: "",
-    gambarTiga: "",
+    gambarSatu: DiponegoroSatu,
+    gambarDua: DiponegoroDua,
+    gambarTiga: DiponegoroTiga,
   },
   {
     id: 5,
@@ -150,9 +165,9 @@ const Biografi = [
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
       pencapaianLima: "",
     },
-    gambarSatu: "",
-    gambarDua: "",
-    gambarTiga: "",
+    gambarSatu: CutNyakDienSatu,
+    gambarDua: CutNyakDienDua,
+    gambarTiga: CutNyakDienTiga,
   },
   {
     id: 6,
@@ -386,3 +401,5 @@ const Biografi = [
     gambarTiga: gustiNungraiTiga,
   },
 ];
+
+export default Biografi;
