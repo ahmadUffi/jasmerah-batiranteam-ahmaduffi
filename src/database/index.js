@@ -13,6 +13,26 @@ import meutiaTiga from "./CutNyakMeutia/gambarTiga.jpg";
 import singaMangarajaSatu from "./SingamangarajaXII/gambarSatu.jpeg";
 import singaMangarajaDua from "./SingamangarajaXII/gambarDua.jpg";
 import singaMangarajaTiga from "./SingamangarajaXII/gambarTiga.jpg";
+import SoekarnoSatu from "./Soekarno/GambarSatu.jpg";
+import SoekarnoDua from "./Soekarno/GambarDua.jpg";
+import SoekarnoTiga from "./Soekarno/GambarTiga.jpg";
+import HattaSatu from "./MuhammadHatta/GambarSatu.jpeg";
+import HattaDua from "./MuhammadHatta/GambarDua.jpg";
+import HattaTiga from "./MuhammadHatta/GambarTiga.jpg";
+import HasanuddinSatu from "./SultanHasanuddin/GambarSatu.png";
+import HasanuddinDua from "./SultanHasanuddin/GambarDua.jpg";
+import HasanuddinTiga from "./SultanHasanuddin/GambarTiga.jpg";
+import DiponegoroSatu from "./PangeranDiponegoro/GambarSatu.png";
+import DiponegoroDua from "./PangeranDiponegoro/GambarDua.jpg";
+import DiponegoroTiga from "./PangeranDiponegoro/GambarTiga.jpg";
+import CutNyakDienSatu from "./CutNyakDien/GambarSatu.jpg";
+import CutNyakDienDua from "./CutNyakDien/GambarDua.jpg";
+import CutNyakDienTiga from "./CutNyakDien/GambarTiga.jpg";
+
+import RAKartiniSatu from "./RAKartini/GambarSatu.jpg";
+import TeukuUmarSatu from "./TeukuUmar/GambarSatu.jpeg";
+import DewiSartikaSatu from "./DewiSartika/GambarSatu.jpg";
+import KiHajarDewantaraSatu from "./KiHajarDewantara/GambarSatu.jpg";
 
 const biografis = [
   {
@@ -38,9 +58,9 @@ const biografis = [
       pencapaianLima:
         "Mendapat gelar Pahlawan Proklamasi oleh pemerintah Indonesia.",
     },
-    gambarSatu: "",
-    gambarDua: "",
-    gambarTiga: "",
+    gambarSatu: SoekarnoSatu,
+    gambarDua: SoekarnoDua,
+    gambarTiga: SoekarnoTiga,
   },
   {
     id: 2,
@@ -63,9 +83,9 @@ const biografis = [
       pencapaianLima:
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
     },
-    gambarSatu: "",
-    gambarDua: "",
-    gambarTiga: "",
+    gambarSatu: HattaSatu,
+    gambarDua: HattaDua,
+    gambarTiga: HattaTiga,
   },
   {
     id: 3,
@@ -92,9 +112,9 @@ const biografis = [
       pencapaianEmpat:
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
     },
-    gambarSatu: "",
-    gambarDua: "",
-    gambarTiga: "",
+    gambarSatu: HasanuddinSatu,
+    gambarDua: HasanuddinDua,
+    gambarTiga: HasanuddinTiga,
   },
 
   {
@@ -122,9 +142,9 @@ const biografis = [
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
       pencapaianLima: "",
     },
-    gambarSatu: "",
-    gambarDua: "",
-    gambarTiga: "",
+    gambarSatu: DiponegoroSatu,
+    gambarDua: DiponegoroDua,
+    gambarTiga: DiponegoroTiga,
   },
   {
     id: 5,
@@ -150,9 +170,9 @@ const biografis = [
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
       pencapaianLima: "",
     },
-    gambarSatu: "",
-    gambarDua: "",
-    gambarTiga: "",
+    gambarSatu: CutNyakDienSatu,
+    gambarDua: CutNyakDienDua,
+    gambarTiga: CutNyakDienTiga,
   },
   {
     id: 6,
@@ -178,7 +198,7 @@ const biografis = [
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
       pencapaianLima: "",
     },
-    gambarSatu: "",
+    gambarSatu: RAKartiniSatu,
     gambarDua: "",
     gambarTiga: "",
   },
@@ -203,7 +223,7 @@ const biografis = [
       pencapaianEmpat:
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
     },
-    gambarSatu: "",
+    gambarSatu: TeukuUmarSatu,
     gambarDua: "",
     gambarTiga: "",
   },
@@ -230,7 +250,7 @@ const biografis = [
       pencapaianEmpat:
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
     },
-    gambarSatu: "",
+    gambarSatu: DewiSartikaSatu,
     gambarDua: "",
     gambarTiga: "",
   },
@@ -257,7 +277,7 @@ const biografis = [
       pencapaianLima:
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
     },
-    gambarSatu: "",
+    gambarSatu: KiHajarDewantaraSatu,
     gambarDua: "",
     gambarTiga: "",
   },
@@ -387,4 +407,4 @@ const biografis = [
   },
 ];
 
-export { biografis };
+export default biografis;

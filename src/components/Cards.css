@@ -1,0 +1,218 @@
+.CardsContainer {
+  max-width: 60rem;
+  margin: 0 auto;
+  columns: 3;
+  column-gap: 1px;
+}
+
+.CardsBox {
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  cursor: pointer;
+  break-inside: avoid;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .CardsContainer {
+    columns: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .CardsContainer {
+    columns: 2;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .CardsContainer {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+  }
+  .CardsBox {
+    width: 300px;
+    height: 400px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .CardsBox:nth-child(odd) {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.CardsBox:nth-child(odd) {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  break-inside: avoid;
+}
+
+.BlackShadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  animation: OutOpacityShadow 0.5s ease-out;
+}
+
+.CardsTexts {
+  width: 100%;
+  height: 100%;
+  gap: 1px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  justify-content: end;
+  padding-bottom: 40px;
+}
+
+.CardsBox .CardsTexts h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  z-index: 2;
+  animation: OutTop 0.5s ease-out;
+}
+.CardsBox .CardsTexts h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 10px 0 10px;
+  color: grey;
+  animation: BotWithColor 0.5s ease-out;
+  z-index: 2;
+  animation: OutTop 0.5s ease-out;
+  font-style: italic;
+}
+
+.CardsBox:hover {
+  .CardsTexts h1 {
+    animation: Top 0.5s both;
+    transition: 0.5s;
+  }
+  .CardsTexts h3 {
+    animation: TopWithColor 0.5s both;
+  }
+  .BlackShadow {
+    animation: OpacityShadow 0.5s both;
+  }
+}
+
+@keyframes Top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes OutTop {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes TopWithColor {
+  0% {
+    transform: translateY(0);
+    color: grey;
+  }
+  100% {
+    transform: translateY(-10px);
+    color: white;
+  }
+}
+
+@keyframes BotWithColor {
+  0% {
+    transform: translateY(-10);
+    color: white;
+  }
+  100% {
+    transform: translateY(0);
+    color: grey;
+  }
+}
+
+@keyframes OpacityShadow {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 400px;
+    opacity: 0.3;
+  }
+}
+
+@keyframes OutOpacityShadow {
+  from {
+    height: 400px;
+    opacity: 0.1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .CardsContainer {
+    columns: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .CardsContainer {
+    columns: 2;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .CardsContainer {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .CardsBox {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .CardsBox:nth-child(odd) {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

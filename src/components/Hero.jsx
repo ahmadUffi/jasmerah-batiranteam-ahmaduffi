@@ -1,7 +1,7 @@
 import React from "react";
 import "./hero.css";
 
-import img from "../database/Soekarno/Presiden_Sukarno2.jpg";
+import img from "../database/Soekarno/GambarDua.jpg";
 
 const Hero = ({ data }) => {
   console.log(data);
