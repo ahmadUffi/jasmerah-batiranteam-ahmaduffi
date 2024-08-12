@@ -1,15 +1,23 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <Box>
+    <nav>
       <Stack>
         <div className="logo">
           <img src="#" alt="logos" />
         </div>
+        <Box>
+          <Typography>Home</Typography>
+          <Typography>List</Typography>
+          <Typography>About</Typography>
+        </Box>
+        <div>
+          <Button>SingUP</Button>
+        </div>
       </Stack>
-    </Box>
+    </nav>
   );
 };
 
