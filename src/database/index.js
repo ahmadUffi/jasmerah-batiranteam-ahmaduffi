@@ -1,20 +1,20 @@
 import sultanAgungSatu from "./SultanAgung/gambarSatu.jpg";
-import sultanAgungDua from "./SultanAgung/gambarDua.jpg";
+import sultanAgungDua from "./SultanAgung/gambarDua.jpeg";
 import sultanAgungTiga from "./SultanAgung/gambarTiga.jpg";
 import patimuraSatu from "./Pattimura/gambarSatu.jpeg";
 import patimuraDua from "./Pattimura/gambarDua.jpeg";
-import patimuratiga from "./Pattimura/gambarTiga.jpeg";
+import patimuratiga from "./Pattimura/gambarTiga.jpg";
 import gustiNungraiSatu from "./IGustiNgurahRai/gambarSatu.jpeg";
-import gustiNungraiDua from "./IGustiNgurahRai/gambarDuaA.jpeg";
-import gustiNungraiTiga from "./IGustiNgurahRai/gambarTiga.jpeg";
+import gustiNungraiDua from "./IGustiNgurahRai/gambarDua.jpeg";
+import gustiNungraiTiga from "./IGustiNgurahRai/gambarTiga.jpg";
 import meutiaSatu from "./CutNyakMeutia/gambarSatu.jpg";
 import meutiaDua from "./CutNyakMeutia/gambarDua.jpg";
 import meutiaTiga from "./CutNyakMeutia/gambarTiga.jpg";
 import singaMangarajaSatu from "./SingamangarajaXII/gambarSatu.jpeg";
-import singaMangarajaDua from "./SingamangarajaXII/gambarDua.jpeg";
-import singaMangarajaTiga from "./SingamangarajaXII/gambarTiga.jpeg";
+import singaMangarajaDua from "./SingamangarajaXII/gambarDua.jpg";
+import singaMangarajaTiga from "./SingamangarajaXII/gambarTiga.jpg";
 
-const Biografi = [
+const biografis = [
   {
     id: 1,
     nama: "Soekarno",
@@ -386,3 +386,5 @@ const Biografi = [
     gambarTiga: gustiNungraiTiga,
   },
 ];
+
+export { biografis };

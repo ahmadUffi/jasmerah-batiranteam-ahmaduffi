@@ -1,0 +1,53 @@
+.hero {
+  width: 100%;
+  height: 100%;
+}
+.detail {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 30px;
+}
+
+.gambar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gambar .wrapper {
+  border-radius: 24px;
+  background-color: azure;
+  animation: float 3s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.gambar .wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Atur gambar agar menutupi seluruh area parent */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 640px) {
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: translateY(-20px);
+    box-shadow: 0px 40px 30px rgba(0, 0, 0, 0.2);
+  }
+}

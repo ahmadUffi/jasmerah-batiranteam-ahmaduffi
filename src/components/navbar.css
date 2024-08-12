@@ -7,6 +7,11 @@
   background-color: transparent;
   font-family: "inter";
   font-weight: 500;
+  padding: 0 24px;
+}
+
+.logo {
+  width: 50px;
 }
 
 .container-nav .fungsi a {
@@ -23,7 +28,7 @@
   border-radius: 12px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .navbar {
     border: none;
   }
@@ -65,5 +70,18 @@
     width: 24px;
     height: 2px;
     background-color: black;
+  }
+
+  .btn {
+    position: absolute;
+    left: -100px;
+    top: 2rem;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+  }
+
+  .btn.active {
+    left: 12px;
+    opacity: 1;
   }
 }
