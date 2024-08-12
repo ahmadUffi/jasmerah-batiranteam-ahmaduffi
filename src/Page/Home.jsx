@@ -1,8 +1,14 @@
 import React from "react";
-import Cards from "../components/Cards";
+import "./home.css";
+import Hero from "../components/Hero";
 
 const Home = () => {
-  return <Cards />;
+  return (
+    <div className="home">
+      <Hero />
+    </div>
+  );
+  ``;
 };
 
 export default Home;
