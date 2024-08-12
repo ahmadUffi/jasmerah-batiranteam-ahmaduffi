@@ -5,12 +5,6 @@
   column-gap: 1px;
 }
 
-.Box {
-  width: 100%;
-  margin-bottom: 10px;
-  break-inside: avoid;
-}
-
 .CardsBox {
   width: 300px;
   height: 400px;
@@ -18,6 +12,42 @@
   cursor: pointer;
   break-inside: avoid;
   position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .CardsContainer {
+    columns: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .CardsContainer {
+    columns: 2;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .CardsContainer {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+  }
+  .CardsBox {
+    width: 300px;
+    height: 400px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .CardsBox:nth-child(odd) {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .CardsBox:nth-child(odd) {
@@ -149,5 +179,40 @@
   to {
     height: 0;
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .CardsContainer {
+    columns: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .CardsContainer {
+    columns: 2;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .CardsContainer {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .CardsBox {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .CardsBox:nth-child(odd) {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

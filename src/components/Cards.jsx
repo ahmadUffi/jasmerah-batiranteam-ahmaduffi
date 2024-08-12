@@ -9,20 +9,16 @@ const Cards = () => {
           return (
             <div
               key={key}
-              className="box"
               onClick={() => {
                 window.open(`/daftarpahlawan/${item.nama}`, "_self");
               }}
+              className={`CardsBox object-cover bg-cover bg-center bg-no-repeat`}
+              style={{ backgroundImage: `url(${item.gambarSatu})` }}
             >
-              <div
-                className={`CardsBox object-cover bg-cover bg-center bg-no-repeat`}
-                style={{ backgroundImage: `url(${item.gambarSatu})` }}
-              >
-                <div className="BlackShadow"></div>
-                <div className="CardsTexts">
-                  <h1>{item.nama}</h1>
-                  <h3>{item.biografi.paragrafSatu.slice(0, 50)}...</h3>
-                </div>
+              <div className="BlackShadow"></div>
+              <div className="CardsTexts">
+                <h1>{item.nama}</h1>
+                <h3>{item.biografi.paragrafSatu.slice(0, 50)}...</h3>
               </div>
             </div>
           );
