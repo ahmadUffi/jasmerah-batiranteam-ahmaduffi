@@ -1,10 +1,13 @@
 import sultanAgungSatu from "./SultanAgung/gambarSatu.jpg";
-import sultanAgungDua from "./SultanAgung/gambarDua.jpeg";
+import sultanAgungDua from "./SultanAgung/gambarDua.jpeeg";
 import sultanAgungTiga from "./SultanAgung/gambarTiga.jpg";
 import patimuraSatu from "./Pattimura/gambarSatu.jpeg";
 import patimuraDua from "./Pattimura/gambarDua.jpeg";
 import patimuratiga from "./Pattimura/gambarTiga.jpg";
+import patimuratiga from "./Pattimura/gambarTiga.jpg";
 import gustiNungraiSatu from "./IGustiNgurahRai/gambarSatu.jpeg";
+import gustiNungraiDua from "./IGustiNgurahRai/gambarDua.jpeg";
+import gustiNungraiTiga from "./IGustiNgurahRai/gambarTiga.jpg";
 import gustiNungraiDua from "./IGustiNgurahRai/gambarDua.jpeg";
 import gustiNungraiTiga from "./IGustiNgurahRai/gambarTiga.jpg";
 import meutiaSatu from "./CutNyakMeutia/gambarSatu.jpg";
@@ -34,7 +37,7 @@ import TeukuUmarSatu from "./TeukuUmar/GambarSatu.jpeg";
 import DewiSartikaSatu from "./DewiSartika/GambarSatu.jpg";
 import KiHajarDewantaraSatu from "./KiHajarDewantara/GambarSatu.jpg";
 
-const Biografi = [
+const biografis = [
   {
     id: 1,
     nama: "Soekarno",
