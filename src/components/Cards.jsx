@@ -3,7 +3,7 @@ import Biografi from "../database";
 
 const Cards = () => {
   return (
-    <div className="container py-24">
+    <div className="container py-24 scrollbar-hide">
       <div className="CardsContainer">
         {Biografi.map((item, key) => {
           return (

@@ -1,13 +1,10 @@
 import sultanAgungSatu from "./SultanAgung/gambarSatu.jpg";
-import sultanAgungDua from "./SultanAgung/gambarDua.jpeeg";
+import sultanAgungDua from "./SultanAgung/gambarDua.jpeg";
 import sultanAgungTiga from "./SultanAgung/gambarTiga.jpg";
 import patimuraSatu from "./Pattimura/gambarSatu.jpeg";
 import patimuraDua from "./Pattimura/gambarDua.jpeg";
 import patimuratiga from "./Pattimura/gambarTiga.jpg";
-import patimuratiga from "./Pattimura/gambarTiga.jpg";
 import gustiNungraiSatu from "./IGustiNgurahRai/gambarSatu.jpeg";
-import gustiNungraiDua from "./IGustiNgurahRai/gambarDua.jpeg";
-import gustiNungraiTiga from "./IGustiNgurahRai/gambarTiga.jpg";
 import gustiNungraiDua from "./IGustiNgurahRai/gambarDua.jpeg";
 import gustiNungraiTiga from "./IGustiNgurahRai/gambarTiga.jpg";
 import meutiaSatu from "./CutNyakMeutia/gambarSatu.jpg";
@@ -410,4 +407,4 @@ const biografis = [
   },
 ];
 
-export default Biografi;
+export default biografis;
