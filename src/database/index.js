@@ -1,33 +1,38 @@
 import sultanAgungSatu from "./SultanAgung/gambarSatu.jpg";
-import sultanAgungDua from "./SultanAgung/gambarDua.jpg";
+import sultanAgungDua from "./SultanAgung/gambarDua.jpeg";
 import sultanAgungTiga from "./SultanAgung/gambarTiga.jpg";
 import patimuraSatu from "./Pattimura/gambarSatu.jpeg";
 import patimuraDua from "./Pattimura/gambarDua.jpeg";
-import patimuratiga from "./Pattimura/gambarTiga.jpeg";
+import patimuratiga from "./Pattimura/gambarTiga.jpg";
 import gustiNungraiSatu from "./IGustiNgurahRai/gambarSatu.jpeg";
-import gustiNungraiDua from "./IGustiNgurahRai/gambarDuaA.jpeg";
-import gustiNungraiTiga from "./IGustiNgurahRai/gambarTiga.jpeg";
+import gustiNungraiDua from "./IGustiNgurahRai/gambarDua.jpeg";
+import gustiNungraiTiga from "./IGustiNgurahRai/gambarTiga.jpg";
 import meutiaSatu from "./CutNyakMeutia/gambarSatu.jpg";
 import meutiaDua from "./CutNyakMeutia/gambarDua.jpg";
 import meutiaTiga from "./CutNyakMeutia/gambarTiga.jpg";
 import singaMangarajaSatu from "./SingamangarajaXII/gambarSatu.jpeg";
-import singaMangarajaDua from "./SingamangarajaXII/gambarDua.jpeg";
-import singaMangarajaTiga from "./SingamangarajaXII/gambarTiga.jpeg";
+import singaMangarajaDua from "./SingamangarajaXII/gambarDua.jpg";
+import singaMangarajaTiga from "./SingamangarajaXII/gambarTiga.jpg";
 import SoekarnoSatu from "./Soekarno/GambarSatu.jpg";
 import SoekarnoDua from "./Soekarno/GambarDua.jpg";
 import SoekarnoTiga from "./Soekarno/GambarTiga.jpg";
-import HattaSatu from "./MohammadHatta/GambarSatu.jpg";
-import HattaDua from "./MohammadHatta/GambarDua.jpg";
-import HattaTiga from "./MohammadHatta/GambarTiga.jpg";
-import HasanuddinSatu from "./SultanHasanuddin/GambarSatu.jpg";
+import HattaSatu from "./MuhammadHatta/GambarSatu.jpeg";
+import HattaDua from "./MuhammadHatta/GambarDua.jpg";
+import HattaTiga from "./MuhammadHatta/GambarTiga.jpg";
+import HasanuddinSatu from "./SultanHasanuddin/GambarSatu.png";
 import HasanuddinDua from "./SultanHasanuddin/GambarDua.jpg";
 import HasanuddinTiga from "./SultanHasanuddin/GambarTiga.jpg";
-import DiponegoroSatu from "./PangeranDiponegoro/GambarSatu.jpg";
+import DiponegoroSatu from "./PangeranDiponegoro/GambarSatu.png";
 import DiponegoroDua from "./PangeranDiponegoro/GambarDua.jpg";
 import DiponegoroTiga from "./PangeranDiponegoro/GambarTiga.jpg";
 import CutNyakDienSatu from "./CutNyakDien/GambarSatu.jpg";
 import CutNyakDienDua from "./CutNyakDien/GambarDua.jpg";
 import CutNyakDienTiga from "./CutNyakDien/GambarTiga.jpg";
+
+import RAKartiniSatu from "./RAKartini/GambarSatu.jpg";
+import TeukuUmarSatu from "./TeukuUmar/GambarSatu.jpeg";
+import DewiSartikaSatu from "./DewiSartika/GambarSatu.jpg";
+import KiHajarDewantaraSatu from "./KiHajarDewantara/GambarSatu.jpg";
 
 const Biografi = [
   {
@@ -193,7 +198,7 @@ const Biografi = [
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
       pencapaianLima: "",
     },
-    gambarSatu: "",
+    gambarSatu: RAKartiniSatu,
     gambarDua: "",
     gambarTiga: "",
   },
@@ -218,7 +223,7 @@ const Biografi = [
       pencapaianEmpat:
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
     },
-    gambarSatu: "",
+    gambarSatu: TeukuUmarSatu,
     gambarDua: "",
     gambarTiga: "",
   },
@@ -245,7 +250,7 @@ const Biografi = [
       pencapaianEmpat:
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
     },
-    gambarSatu: "",
+    gambarSatu: DewiSartikaSatu,
     gambarDua: "",
     gambarTiga: "",
   },
@@ -272,7 +277,7 @@ const Biografi = [
       pencapaianLima:
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
     },
-    gambarSatu: "",
+    gambarSatu: KiHajarDewantaraSatu,
     gambarDua: "",
     gambarTiga: "",
   },

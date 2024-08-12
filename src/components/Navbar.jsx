@@ -4,7 +4,7 @@ import "./navbar.css";
 const Navbar = () => {
   function activeHabdler() {}
   return (
-    <nav className="navbar fixed top-0 left-0 right-0 ">
+    <nav className="navbar fixed top-0 left-0 right-0 z-10">
       <div className="container-nav flex justify-around items-center text-w relative">
         <div className="logo invisible sm:visible">
           <img src="#" alt="logo" />

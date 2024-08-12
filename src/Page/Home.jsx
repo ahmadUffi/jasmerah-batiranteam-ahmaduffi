@@ -1,4 +1,3 @@
-import React from "react";
 import "./home.css";
 import Hero from "../components/Hero";
 
@@ -8,7 +7,6 @@ const Home = () => {
       <Hero />
     </div>
   );
-  ``;
 };
 
 export default Home;
