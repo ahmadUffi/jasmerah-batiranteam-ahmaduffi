@@ -12,7 +12,11 @@
   color: white;
 }
 
-.detail .btn {
+.btn-wrapper {
+  margin: 0 auto;
+}
+
+.detail .button {
   padding: 8px 12px;
   border-radius: 8px;
   background-color: #ff8343;

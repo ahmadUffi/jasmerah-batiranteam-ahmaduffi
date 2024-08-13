@@ -1,4 +1,5 @@
 .CardsContainer {
+  margin-top: 65px;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
@@ -7,7 +8,7 @@
   align-content: center;
   justify-items: center;
   justify-content: space-between;
-  grid-row-gap: 1.2rem;
+  grid-row-gap: 1rem;
   grid-column-gap: 1.2rem;
   width: max-content;
   margin: 0 auto;
@@ -15,13 +16,122 @@
 }
 
 .CardsBox {
-  width: 300px;
-  height: 400px;
+  width: 115px;
+  height: 180px;
   border-radius: 16px;
   cursor: pointer;
   position: relative;
+  filter: grayscale(1);
+  transition: all 0.2s;
+}
+
+.CardsBox:hover {
+  filter: grayscale(0);
+  transform: scale(1.1) translateY(-3rem);
+  z-index: 21;
 }
 
 .CardsBox.mobile {
   transform: translateY(9rem);
+}
+.CardsBox.mobile:hover {
+  transform: translateY(6rem) scale(1.1);
+}
+
+.BlackShadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+.CardsTexts {
+  width: 100%;
+  height: 100%;
+  gap: 1px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  justify-content: end;
+  padding-bottom: 10px;
+}
+
+.CardsBox .CardsTexts h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  z-index: 2;
+  animation: OutTop 0.5s ease-out;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.43);
+}
+.CardsBox .CardsTexts h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin: 0 10px 0 10px;
+  color: grey;
+  animation: BotWithColor 0.5s ease-out;
+  z-index: 2;
+  animation: OutTop 0.5s ease-out;
+  font-style: italic;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.43);
+}
+
+.CardsBox:hover {
+  .CardsTexts h1 {
+    animation: Top 0.5s both;
+    transition: 0.5s;
+  }
+  .CardsTexts h3 {
+    animation: TopWithColor 0.5s both;
+  }
+}
+
+@keyframes Top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes OutTop {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes TopWithColor {
+  0% {
+    transform: translateY(0);
+    color: grey;
+  }
+  100% {
+    transform: translateY(-10px);
+    color: white;
+  }
+}
+
+@keyframes BotWithColor {
+  0% {
+    transform: translateY(-10);
+    color: white;
+  }
+  100% {
+    transform: translateY(0);
+    color: grey;
+  }
 }

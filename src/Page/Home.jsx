@@ -20,12 +20,12 @@ const Home = () => {
     setCurrentPage(value);
   };
   return (
-    <div className="home h-[100dvh] flex justify-center items-center relative">
+    <div className="home  flex justify-center items-center relative">
       <Box>
         {currentHero.map((hero, index) => (
           <Hero hero={hero} key={index} />
         ))}
-        <Box className="flex justify-center md:mt-14 ">
+        <Box className="flex justify-center md:mt-14 mt-7 mb-7">
           <Pagination
             defaultPage={1}
             count={Math.ceil(heroSIlder.length / heroPerPage)}

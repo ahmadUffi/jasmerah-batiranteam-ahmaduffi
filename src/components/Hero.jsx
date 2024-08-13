@@ -2,6 +2,7 @@ import React from "react";
 import "./hero.css";
 
 import img from "../database/Soekarno/GambarDua.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = ({ hero }) => {
   return (
@@ -12,12 +13,14 @@ const Hero = ({ hero }) => {
         </h1>
         <p>{hero.biografi.paragrafSatu}</p>
         <div className="btn-wrapper flex gap-12 mt-8">
-          <button className="btn">Details</button>
-          <button className="btn">More Heroes</button>
+          <button className="button">Details</button>
+          <Link to="/daftarpahlawan">
+            <button className="button">More Heroes</button>
+          </Link>
         </div>
       </div>
       <div className="gambar ">
-        <div className="wrapper basis-auto sm:w-[300px] sm:h-[420px] lg:w-[320px] lg:h-[429px] w-[240px] h-[340px]">
+        <div className="wrapper basis-auto sm:w-[300px] sm:h-[420px] lg:w-[320px] lg:h-[429px] w-[240px] h-[340px] ">
           <img src={hero.gambarSatu} alt="#" className="" />
         </div>
       </div>
