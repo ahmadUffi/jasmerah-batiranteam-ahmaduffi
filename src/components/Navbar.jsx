@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="navbar fixed top-0 left-0 right-0 z-10">
       <div
         className={` ${
-          active ? "" : "active"
+          active ? "active" : ""
         } container-nav flex justify-between items-center text-w relative`}
       >
         <div className="logo invisible sm:visible">
@@ -19,7 +19,7 @@ const Navbar = () => {
 
         <div
           className={`fungsi ${
-            active ? "" : "active"
+            active ? "active" : ""
           } flex flex-col sm:flex-row sm:gap-[3rem] md:gap-[6rem]`}
         >
           <Link to="/" className="relative right-[-28px] rounded-br-[13px]">
@@ -32,14 +32,14 @@ const Navbar = () => {
             About
           </Link>
         </div>
-        <div className={`${active ? "btn" : "btn active"}`}>
+        <div className={`${active ? "btn active" : "btn"}`}>
           <button className="">SingUp</button>
         </div>
       </div>
 
       <div
         className={`burger ${
-          active ? "delay-300" : "active"
+          active ? "active" : "delay-300"
         } visible sm:invisible flex flex-col gap-1 h-12 w-12 rounded-full absolute top-4 right-4 flex justify-center items-center `}
         onClick={activeHandler}
       >
