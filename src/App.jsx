@@ -6,7 +6,7 @@ import Pahlawan from "./Page/Pahlawan";
 import About from "./Page/About";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import AOS from "aos";
 function App() {
   return (
     <>

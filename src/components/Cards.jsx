@@ -2,6 +2,7 @@ import "./Cards.css";
 import Biografi from "../database";
 
 const Cards = () => {
+  const boxDown = [2, 5, 8, 11, 14];
   return (
     <div className="container py-24 scrollbar-hide">
       <div className="CardsContainer">
@@ -12,13 +13,20 @@ const Cards = () => {
               onClick={() => {
                 window.open(`/daftarpahlawan/${item.nama}`, "_self");
               }}
-              className={`CardsBox object-cover bg-cover bg-center bg-no-repeat`}
+              className={`${
+                boxDown.includes(key + 1)
+                  ? "mobile CardsBox object-cover bg-cover bg-center bg-no-repeat"
+                  : "CardsBox object-cover bg-cover bg-center bg-no-repeat"
+              }`}
               style={{ backgroundImage: `url(${item.gambarSatu})` }}
             >
               <div className="BlackShadow"></div>
               <div className="CardsTexts">
                 <h1>{item.nama}</h1>
-                <h3>{item.biografi.paragrafSatu.slice(0, 50)}...</h3>
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                  animi maxime maiores!
+                </h3>
               </div>
             </div>
           );

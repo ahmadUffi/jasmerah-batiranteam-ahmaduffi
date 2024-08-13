@@ -1,5 +1,5 @@
 .navbar {
-  border-bottom: 1px solid rgba(149, 149, 149, 0.4);
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.1);
 }
 
 .container-nav {
@@ -8,6 +8,7 @@
   font-family: "inter";
   font-weight: 500;
   padding: 0 24px;
+  transition: all 0.3s ease;
 }
 
 .logo {
@@ -15,7 +16,7 @@
 }
 
 .container-nav .fungsi a {
-  /* color: black; */
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
@@ -26,11 +27,18 @@
   padding: 12px 22px;
   outline: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 12px;
+  color: white;
 }
 
 @media (max-width: 640px) {
   .navbar {
-    border: none;
+    box-shadow: none;
+  }
+
+  .container-nav.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    height: 150px;
   }
 
   .fungsi {
@@ -56,6 +64,7 @@
     font-weight: bold;
     width: 110px;
     position: relative;
+    color: black;
   }
 
   .burger {
@@ -77,6 +86,8 @@
     left: -100px;
     top: 2rem;
     opacity: 0;
+    color: black;
+
     transition: all 0.3s ease-in;
   }
 

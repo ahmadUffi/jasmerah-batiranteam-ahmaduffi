@@ -3,22 +3,22 @@ import "./hero.css";
 
 import img from "../database/Soekarno/GambarDua.jpg";
 
-const Hero = ({ data }) => {
-  console.log(data);
+const Hero = ({ hero }) => {
   return (
     <div className="hero flex flex-col md:flex-row">
       <div className="detail lg:ps-48 ">
-        <h1 className="text-6xl font-bold mb-10 ">Ir Soekarno</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ut quo
-          enim consequatur minus do6or necessitatibus quis consectetur, harum
-          quisquam nemo possimus maxime laudantium beatae quia ipsam officia
-          unde iusto.
-        </p>
+        <h1 className="md:text-6xl font-bold md:mb-10 sm:mb-5 mb-3 sm:text-5xl text-4xl">
+          {hero.nama}
+        </h1>
+        <p>{hero.biografi.paragrafSatu}</p>
+        <div className="btn-wrapper flex gap-12 mt-8">
+          <button className="btn">Details</button>
+          <button className="btn">More Heroes</button>
+        </div>
       </div>
       <div className="gambar ">
-        <div className="wrapper basis-auto md:w-[300px] md:h-[400] lg:w-[320px] lg:h-[429px] w-[240px] h-[340px]">
-          <img src={img} alt="#" className="" />
+        <div className="wrapper basis-auto sm:w-[300px] sm:h-[420px] lg:w-[320px] lg:h-[429px] w-[240px] h-[340px]">
+          <img src={hero.gambarSatu} alt="#" className="" />
         </div>
       </div>
     </div>
