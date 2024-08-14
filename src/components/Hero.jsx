@@ -11,7 +11,7 @@ const Hero = ({ hero }) => {
         <h1 className="md:text-6xl font-bold md:mb-10 sm:mb-5 mb-3 sm:text-5xl text-4xl">
           {hero.nama}
         </h1>
-        <p>{hero.biografi.paragrafSatu}</p>
+        <p className="text-justify"> {hero.biografi.paragrafSatu}</p>
         <div className="btn-wrapper flex gap-12 mt-8">
           <button className="button">Details</button>
           <Link to="/daftarpahlawan">

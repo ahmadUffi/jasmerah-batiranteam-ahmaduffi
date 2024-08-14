@@ -12,10 +12,6 @@
   color: white;
 }
 
-.btn-wrapper {
-  margin: 0 auto;
-}
-
 .detail .button {
   padding: 8px 12px;
   border-radius: 8px;
@@ -48,8 +44,13 @@
   top: 0;
   left: 0;
 }
-
+.btn-wrapper {
+  margin: 0;
+}
 @media (max-width: 640px) {
+  .btn-wrapper {
+    /* margin: 0 auto; */
+  }
 }
 
 @keyframes float {

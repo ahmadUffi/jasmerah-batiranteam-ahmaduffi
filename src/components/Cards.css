@@ -73,6 +73,7 @@
   z-index: 2;
   animation: OutTop 0.5s ease-out;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.43);
+  word-wrap: break-word;
 }
 .CardsBox .CardsTexts h3 {
   font-family: "Inter", sans-serif;

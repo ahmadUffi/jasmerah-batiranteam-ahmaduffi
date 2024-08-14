@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -22,15 +22,15 @@ const Navbar = () => {
             active ? "active" : ""
           } flex flex-col sm:flex-row sm:gap-[3rem] md:gap-[6rem]`}
         >
-          <Link to="/" className="relative right-[-28px] rounded-br-[13px]">
+          <NavLink to="/" className="relative right-[-28px] rounded-br-[13px]">
             Home
-          </Link>
-          <Link to="/daftarpahlawan" className="rounded-r-lg">
+          </NavLink>
+          <NavLink to="/daftarpahlawan" className="rounded-r-lg">
             List Pahlawan
-          </Link>
-          <Link to="/about" className="right-[-28px] rounded-tr-[13px]">
-            About
-          </Link>
+          </NavLink>
+          <NavLink to="/about" className="right-[-28px] rounded-tr-[13px]">
+            Game
+          </NavLink>
         </div>
         <div className={`${active ? "btn active" : "btn"}`}>
           <button className="">SingUp</button>

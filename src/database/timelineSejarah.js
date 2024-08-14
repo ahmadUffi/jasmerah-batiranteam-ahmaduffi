@@ -7,7 +7,18 @@ import voc3 from "./timelineImg/2/voc3.jpeg";
 import hindia1 from "./timelineImg/3/hindia.jpeg";
 import hindia2 from "./timelineImg/3/hindia2.jpeg";
 import hindia3 from "./timelineImg/3/hindia3.jpeg";
-
+import diponegoro1 from "./timelineImg/4/diponegoro1.jpeg";
+import diponegoro2 from "./timelineImg/4/diponegoro2.jpeg";
+import diponegoro3 from "./timelineImg/4/diponegoro3.jpeg";
+import kebangkitan1 from "./timelineImg/5/kebangkitan1.jpeg";
+import kebangkitan2 from "./timelineImg/5/kebangkitan2.jpeg";
+import kebangkitan3 from "./timelineImg/5/kebangkitan3.jpeg";
+import sumpah1 from "./timelineImg/6/sumpah2.jpeg";
+import sumpah2 from "./timelineImg/6/sumpah1.jpg";
+import sumpah3 from "./timelineImg/6/sumpah3.jpeg";
+import jepang1 from "./timelineImg/7/jepang1.jpeg";
+import jepang2 from "./timelineImg/7/jepang1.jpeg";
+import jepang3 from "./timelineImg/7/jepang3.jpeg";
 const timelineSejarahIndonesia = [
   {
     id: 1,
@@ -46,6 +57,9 @@ const timelineSejarahIndonesia = [
     year: 1825,
     content:
       "Perang Diponegoro merupakan perlawanan terbesar rakyat Jawa terhadap kolonialisme Belanda, dipimpin oleh Pangeran Diponegoro. Meskipun berakhir dengan kekalahan, perang ini menjadi simbol perjuangan rakyat Indonesia.",
+    gambar1: diponegoro1,
+    gambar2: diponegoro2,
+    gambar3: diponegoro3,
   },
   {
     id: 5,
@@ -53,6 +67,9 @@ const timelineSejarahIndonesia = [
     year: 1901,
     content:
       "Pada awal abad ke-20, muncul gagasan Politik Etis yang mengusulkan perbaikan kesejahteraan rakyat pribumi. Hal ini memicu kebangkitan nasional dengan berdirinya organisasi-organisasi pergerakan seperti Budi Utomo pada tahun 1908 dan Sarekat Islam pada tahun 1912.",
+    gambar1: kebangkitan1,
+    gambar2: kebangkitan2,
+    gambar3: kebangkitan3,
   },
   {
     id: 6,
@@ -60,6 +77,9 @@ const timelineSejarahIndonesia = [
     year: 1928,
     content:
       "Pada 28 Oktober 1928, para pemuda dari berbagai daerah di Indonesia mengucapkan Sumpah Pemuda yang menyatakan tekad untuk bersatu dalam satu bangsa, satu tanah air, dan satu bahasa: Indonesia. Sumpah Pemuda memperkuat semangat nasionalisme dan persatuan.",
+    gambar1: sumpah1,
+    gambar1: sumpah2,
+    gambar3: sumpah3,
   },
   {
     id: 7,
@@ -67,6 +87,9 @@ const timelineSejarahIndonesia = [
     year: 1942,
     content:
       "Pada tahun 1942, Jepang mengalahkan Belanda dan menduduki Indonesia. Meskipun Jepang juga menjajah, mereka memberi ruang bagi perkembangan organisasi-organisasi nasionalis. Pendudukan Jepang berakhir pada tahun 1945 dengan menyerahnya Jepang kepada Sekutu.",
+    gambar1: jepang1,
+    gambar2: jepang2,
+    gambar3: jepang3,
   },
   {
     id: 8,

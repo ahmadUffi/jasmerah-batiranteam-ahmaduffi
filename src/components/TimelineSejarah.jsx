@@ -4,18 +4,15 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import icon from "../assets/Jasmerah.svg";
 
-const TimelineSejarah = ({ data, loadMore }) => {
-  const [visible, setVisible] = useState(false);
-  function loadHandler() {
-    if (data.id % 4 == 0) {
-      return loadMore();
-    }
-  }
+const TimelineSejarah = ({ data }) => {
+  const Icon = () => {
+    return <img src={icon} alt="" />;
+  };
   return (
     <>
       <VerticalTimelineElement
-        id="sejarahTimeline"
         className="vertical-timeline-element--work "
         contentStyle={{
           background: "none",
@@ -24,24 +21,24 @@ const TimelineSejarah = ({ data, loadMore }) => {
         }}
         contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
         date={`Tahun ${data.year}`}
-        iconStyle={{ background: "#ff8343", color: "#fff" }}
+        iconStyle={{ background: "#e96523", color: "#fff" }}
+        icon={<Icon />}
       >
         <h3 className="vertical-timeline-element-title text-lg md:text-2xl lg:text-2xl">
           {data.title}
         </h3>
-        {/* <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
         <p>{data.content}</p>
         <div className="gambar-container flex gap-3 overflow-scroll">
           <div
-            className="gambar min-w-[14rem]  h-28 object-cover bg-cover bg-center bg-no-repeat rounded-md"
+            className="gambar min-w-[14rem] max-w-[14rem] h-28 object-cover bg-cover bg-center bg-no-repeat rounded-md"
             style={{ backgroundImage: `url(${data.gambar1})` }}
           ></div>
           <div
-            className="gambar min-w-[14rem] h-28 object-cover bg-cover bg-center bg-no-repeat rounded-md"
+            className="gambar min-w-[14rem] max-w-[14rem] h-28 object-cover bg-cover bg-center bg-no-repeat rounded-md"
             style={{ backgroundImage: `url(${data.gambar2})` }}
           ></div>
           <div
-            className="gambar min-w-[14rem] h-28 object-cover bg-cover bg-center bg-no-repeat rounded-md"
+            className="gambar min-w-[14rem] max-w-[14rem] h-28 object-cover bg-cover bg-center bg-no-repeat rounded-md"
             style={{ backgroundImage: `url(${data.gambar3})` }}
           ></div>
         </div>

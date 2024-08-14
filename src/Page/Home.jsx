@@ -23,13 +23,8 @@ const Home = () => {
     setCurrentPage(value);
   };
 
-  const [visibleCount, setVisibleCount] = useState(4);
-
-  const loadMore = () => {
-    setVisibleCount((prevCount) => prevCount + 4);
-  };
   return (
-    <div className="home">
+    <div className="home md:mt-2 sm:mt-10 lg:mt-0">
       <div className="home-container flex justify-center items-center relative">
         <Box>
           {currentHero.map((hero, index) => (
@@ -68,12 +63,16 @@ const Home = () => {
         </Box>
       </div>
       <div className="timeline mt-[30px]">
-        <h1 className="text-white mb-8">
-          Sejarah Kemerdekaan REpubil indonesia
+        <div id="sejarahTimeline" className="h-[95px]" />
+        <h1
+          className="text-white mb-8 text-xl sm:text-2xl md:text-4xl text-center font-bol"
+          id=""
+        >
+          Sejarah Kemerdekaan Republik indonesia
         </h1>
         <VerticalTimeline>
           {timelineSejarahIndonesia.map((data, index) => (
-            <TimelineSejarah key={index} data={data} loadMore={loadMore} />
+            <TimelineSejarah key={index} data={data} />
           ))}
         </VerticalTimeline>
       </div>
