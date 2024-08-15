@@ -106,10 +106,9 @@ const Artikel = () => {
                       Beberapa foto dari {item.nama}
                     </h1>
                   </div>
-               
+
                   <div
                     className="sticky top-36 bg-cover  bg-center bg-no-repeat h-[20rem] w-[20rem] border border-[#232226] rounded-md"
-                    className="sticky top-36 object-cover bg-cover bg-center bg-no-repeat h-[24rem] w-[100%] border border-[#232226] rounded-md"
                     style={{ backgroundImage: `url(${item.gambarSatu})` }}
                   ></div>
                   <div
@@ -133,12 +132,9 @@ const Artikel = () => {
                       className="sticky top-64 max-w-96"
                       data-aos="fade-up"
                       data-aos-easing="ease-in-sine"
-                      data-aos-duration="400">
-  
-                  
-
+                      data-aos-duration="400"
+                    >
                       <h1 className=" text-5xl font-bold  uppercase inter tracking-widest -z-10 bg-gradient-to-r from-white  to-red-500 text-transparent bg-clip-text animate-gradient text-center">
-
                         Pencapaian
                       </h1>
                       <p className="text-center">
@@ -152,9 +148,8 @@ const Artikel = () => {
                         data-aos="fade-up-right"
                         data-aos-offset="200"
                         data-aos-easing="ease-in-sine"
-                        data-aos-duration="600"                   
+                        data-aos-duration="600"
                         className="filter blur-[0.5px] h-[4rem] w-[100%] grid grid-cols-1 items-center bg-[#232226] rounded-md hover:bg-[#f4efe85e] hover:blur-none  transition-colors duration-100"
-
                       >
                         <h1 className="mx-4">
                           01. {item.pencapaian.pencapaianSatu}

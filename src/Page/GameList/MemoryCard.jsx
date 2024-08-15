@@ -9,15 +9,16 @@ const MemoryCard = () => {
   const [gameOver, setGameOver] = useState(false);
   const [buttonText, setButtonText] = useState("Mulai");
   const [showModal, setShowModal] = useState(false);
-  const [gameStarted, setGameStarted] = useState(false); // New state to track game start
+  const [gameStarted, setGameStarted] = useState(false);
   const cardRefs = useRef([]);
 
   let matchedCard = 0;
   let cardOne, cardTwo;
-  let disabledDeck = false;
+  let disabledDeck = true;
 
   useEffect(() => {
     if (timer === 0) {
+      cardRefs.current.forEach((card) => card.classList.remove("flip"));
       setGameOver(true);
       setButtonText("Coba Lagi!");
       return;
@@ -139,7 +140,7 @@ const MemoryCard = () => {
       </div>
       <div className="flex flex-row text-black items-center bg-[#f8f8f8] rounded-md p-1 md:px-4 gap-2 md:gap5 divide-x">
         <div>
-          <p>Flips: {flips}</p>
+          <p>Flips: {gameOver ? gameOver : flips}</p>
           {gameOver && <p>Duh kmu gagal, tapi bisa coba lagi kok!</p>}
         </div>
         <div className="game-info pl-3">
