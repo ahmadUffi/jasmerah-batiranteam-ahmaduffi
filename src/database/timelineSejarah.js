@@ -78,7 +78,7 @@ const timelineSejarahIndonesia = [
     content:
       "Pada 28 Oktober 1928, para pemuda dari berbagai daerah di Indonesia mengucapkan Sumpah Pemuda yang menyatakan tekad untuk bersatu dalam satu bangsa, satu tanah air, dan satu bahasa: Indonesia. Sumpah Pemuda memperkuat semangat nasionalisme dan persatuan.",
     gambar1: sumpah1,
-    gambar1: sumpah2,
+    gambar2: sumpah2,
     gambar3: sumpah3,
   },
   {

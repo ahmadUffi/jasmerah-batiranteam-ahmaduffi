@@ -22,13 +22,34 @@ const Navbar = () => {
             active ? "active" : ""
           } flex flex-col sm:flex-row sm:gap-[3rem] md:gap-[6rem]`}
         >
-          <NavLink to="/" className="relative right-[-28px] rounded-br-[13px]">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `relative transition-colors duration-100 ease-linear hover:text-red-400 px-2 right-[-28px] rounded-br-[13px] ${
+                isActive ? "bg-red-700 text-white font-bold" : ""
+              }`
+            }
+          >
             Home
           </NavLink>
-          <NavLink to="/daftarpahlawan" className="rounded-r-lg">
+          <NavLink
+            to="/daftarpahlawan"
+            className={({ isActive }) =>
+              `relative transition-colors duration-100 ease-linear hover:text-red-400 px-2 right-[-28px] rounded-br-[13px] ${
+                isActive ? "bg-red-700 text-white font-bold" : ""
+              }`
+            }
+          >
             List Pahlawan
           </NavLink>
-          <NavLink to="/about" className="right-[-28px] rounded-tr-[13px]">
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              `relative transition-colors duration-100 ease-linear hover:text-red-400 px-2 right-[-28px] rounded-br-[13px] ${
+                isActive ? "bg-red-700 text-white font-bold" : ""
+              }`
+            }
+          >
             Game
           </NavLink>
         </div>
@@ -40,7 +61,7 @@ const Navbar = () => {
       <div
         className={`burger ${
           active ? "active" : "delay-300"
-        } visible sm:invisible flex flex-col gap-1 h-12 w-12 rounded-full absolute top-4 right-4 flex justify-center items-center `}
+        } visible sm:invisible flex flex-col gap-1 h-12 w-12 rounded-full absolute top-4 right-4 justify-center items-center `}
         onClick={activeHandler}
       >
         <div className="line"></div>

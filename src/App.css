@@ -13,9 +13,7 @@
 *::-webkit-scrollbar {
   display: none;
 }
-html {
-  scroll-behavior: smooth !important;
-}
+
 body {
   background-color: #0a090d;
 }
