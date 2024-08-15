@@ -43,7 +43,7 @@ const Navbar = () => {
             List Pahlawan
           </NavLink>
           <NavLink
-            to="/about"
+            to="/game"
             className={({ isActive }) =>
               `relative transition-colors duration-100 ease-linear hover:text-red-400 px-2 right-[-28px] rounded-br-[13px] ${
                 isActive ? "bg-red-700 text-white font-bold" : ""
