@@ -3,7 +3,7 @@ import "./susunkata.css";
 import { susunKata } from "../../database/susunkata";
 import Modal from "../../modal/Modal";
 import { Box } from "@mui/material";
-import ButtonComponent from "../../components/ButtonComponent";
+import ButtonComponent from "../../components/Button";
 
 const Susunkata = () => {
   const ref = useRef();
