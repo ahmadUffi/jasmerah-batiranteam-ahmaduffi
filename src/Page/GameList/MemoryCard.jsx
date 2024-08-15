@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./MemoryCard.css";
 import { Button } from "@mui/material";
 import Modal from "../../modal/Modal";
+import ButtonComponent from "../../components/ButtonComponent";
 
 const MemoryCard = () => {
   const [timer, setTimer] = useState(30);
@@ -9,7 +10,7 @@ const MemoryCard = () => {
   const [gameOver, setGameOver] = useState(false);
   const [buttonText, setButtonText] = useState("Mulai");
   const [showModal, setShowModal] = useState(false);
-  const [gameStarted, setGameStarted] = useState(false); // New state to track game start
+  const [gameStarted, setGameStarted] = useState(false);
   const cardRefs = useRef([]);
 
   let matchedCard = 0;
@@ -170,6 +171,8 @@ const MemoryCard = () => {
           </>
         </Modal>
       )}
+
+      <ButtonComponent link={"/game"} text={"kembali"} />
     </div>
   );
 };

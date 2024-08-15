@@ -3,6 +3,7 @@ import "./susunkata.css";
 import { susunKata } from "../../database/susunkata";
 import Modal from "../../modal/Modal";
 import { Box } from "@mui/material";
+import ButtonComponent from "../../components/ButtonComponent";
 
 const Susunkata = () => {
   const ref = useRef();
@@ -86,7 +87,7 @@ const Susunkata = () => {
   }, []);
 
   return (
-    <div className="tebakkata flex justify-center items-center min-h-[100dvh]">
+    <div className="tebakkata flex justify-center items-center min-h-[100dvh] flex-col gap-4 ">
       <div className="container bg-slate-50 w-[400px] p-3 py-9 rounded-md relative ">
         <Box className="title border-b absolute top-[-20px] bg-white left-[50%] translate-x-[-50%] px-3 py-2 rounded-lg outline-4 shadow-sm">
           <h1 className="text-xl md:text-2xl font-bold">Game Susun Kata</h1>
@@ -149,6 +150,7 @@ const Susunkata = () => {
           </>
         </Modal>
       )}
+      <ButtonComponent link={"/game"} text={"kembali"} />
     </div>
   );
 };
