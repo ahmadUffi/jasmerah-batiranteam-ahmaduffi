@@ -8,7 +8,7 @@ const MemoryCard = () => {
   const [timer, setTimer] = useState(30);
   const [flips, setFlips] = useState(0);
   const [gameOver, setGameOver] = useState(false);
-  const [buttonText, setButtonText] = useState("Mulai");
+  const [buttonText, setButtonText] = useState("Start Game");
   const [showModal, setShowModal] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
   const cardRefs = useRef([]);
@@ -20,7 +20,7 @@ const MemoryCard = () => {
   useEffect(() => {
     if (timer === 0) {
       setGameOver(true);
-      setButtonText("Coba Lagi!");
+      setButtonText("Try Again");
       return;
     }
 
