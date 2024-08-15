@@ -26,7 +26,7 @@ const Artikel = () => {
                   <ul id="cards">
                     <li className="card" id="card1">
                       <div className="card-body flex justify-center">
-                        <div className="p-2 max-w-80 lg:max-w-96 mx-5 md:mx-0 lg:mx-0 py-8  inter">
+                        <div className="max-w-80 lg:max-w-96 mx-5 md:mx-0 lg:mx-0 py-8  inter">
                           <div className="flex">
                             <div className="typewriter">
                               <h1 className="text-xl md:text-4xl pb-2">
@@ -46,7 +46,7 @@ const Artikel = () => {
 
                     <li className="card" id="card2">
                       <div className="card-body flex justify-center">
-                        <div className="p-2 max-w-80 lg:max-w-96 mx-5 md:mx-0 lg:mx-0 py-8  inter">
+                        <div className="max-w-80 lg:max-w-96 mx-5 md:mx-0 lg:mx-0 py-8  inter">
                           <p className="pb-2 text-justify">
                             {item.biografi.paragrafDua}
                           </p>
@@ -58,7 +58,7 @@ const Artikel = () => {
                     </li>
                     <li className="card" id="card3">
                       <div className="card-body flex justify-center">
-                        <div className="p-2 max-w-80 lg:max-w-96 mx-5 md:mx-0 lg:mx-0 py-8  inter">
+                        <div className="max-w-80 lg:max-w-96 mx-5 md:mx-0 lg:mx-0 py-8  inter">
                           <p className="pb-2 text-justify">
                             {item.biografi.paragrafTiga}
                           </p>
@@ -72,7 +72,7 @@ const Artikel = () => {
                     {item.biografi.paragrafEmpat && (
                       <li className="card" id="card4">
                         <div className="card-body flex justify-center">
-                          <div className="p-2 max-w-80 lg:max-w-96 mx-5 md:mx-0 lg:mx-0 py-8  inter">
+                          <div className="max-w-80 lg:max-w-96 mx-5 md:mx-0 lg:mx-0 py-8  inter">
                             <p className="pb-2 text-justify">
                               {item.biografi.paragrafEmpat}
                             </p>
@@ -86,7 +86,7 @@ const Artikel = () => {
                     {item.biografi.paragrafLima && (
                       <li className="card" id="card5">
                         <div className="card-body flex justify-center">
-                          <div className="p-2 max-w-80 lg:max-w-96 mx-5 md:mx-0 lg:mx-0 py-8  inter">
+                          <div className="max-w-80 lg:max-w-96 mx-5 md:mx-0 lg:mx-0 py-8  inter">
                             <p className="pb-2">
                               {item.biografi.paragrafEmpat}
                             </p>
@@ -100,7 +100,7 @@ const Artikel = () => {
                   </ul>
                 </div>
 
-                <div className="md:flex md:flex-col md:-z-10 gap-[30rem] pt-36">
+                <div className="md:flex md:flex-col md:-z-10 gap-[30rem] pt-40">
                   <div className="pb-5 sticky top-20 md:hidden">
                     <h1 className="text-xl max-w-80 text-center md:text-4xl inter tracking-wide z-50 font-semibold ">
                       Beberapa foto dari {item.nama}
@@ -108,11 +108,7 @@ const Artikel = () => {
                   </div>
 
                   <div
-
-                  
-
                     className="sticky top-36 object-cover bg-cover bg-center bg-no-repeat h-[24rem] w-[100%] border border-[#232226] rounded-md"
-
                     style={{ backgroundImage: `url(${item.gambarSatu})` }}
                   ></div>
                   <div
