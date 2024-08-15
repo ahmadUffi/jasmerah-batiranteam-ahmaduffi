@@ -157,7 +157,7 @@ const MemoryCard = () => {
         <Modal>
           <>
             <div className="overlay">
-              <div className="container w-[600px] p-3 rounded-lg text-center bg-white">
+              <div className="container w-[300px] md:w-[600px] p-3 rounded-lg text-center bg-white">
                 <h1 className="font-semibold ">Peraturan Game</h1>
                 <ul className="text-start">
                   <li>
