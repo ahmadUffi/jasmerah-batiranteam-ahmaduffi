@@ -5,7 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import icon from "../assets/Jasmerah.svg";
-
+import "./timelinesejarah.css";
 const TimelineSejarah = ({ data }) => {
   const Icon = () => {
     return <img src={icon} alt="" />;
@@ -42,6 +42,12 @@ const TimelineSejarah = ({ data }) => {
             style={{ backgroundImage: `url(${data.gambar3})` }}
           ></div>
         </div>
+        <button
+          type="button"
+          className="box-3d text-black p-2 px-3 font-bold mt-3"
+        >
+          Detail
+        </button>
       </VerticalTimelineElement>
     </>
   );

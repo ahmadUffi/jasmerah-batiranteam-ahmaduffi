@@ -108,7 +108,11 @@ const Artikel = () => {
                   </div>
 
                   <div
-                    className="sticky top-36 bg-cover  bg-center bg-no-repeat h-[20rem] w-[20rem] border border-[#232226] rounded-md"
+
+                  
+
+                    className="sticky top-36 object-cover bg-cover bg-center bg-no-repeat h-[24rem] w-[100%] border border-[#232226] rounded-md"
+
                     style={{ backgroundImage: `url(${item.gambarSatu})` }}
                   ></div>
                   <div
@@ -154,15 +158,6 @@ const Artikel = () => {
                         <h1 className="mx-4">
                           01. {item.pencapaian.pencapaianSatu}
                         </h1>
-                        {/* <div className="text-end mr-4">
-                          <Button
-                            className=""
-                            variant="contained"
-                            color="primary"
-                          >
-                            Pencapaian
-                          </Button>
-                        </div> */}
                       </div>
                       <div
                         data-aos="fade-up-left"
@@ -174,15 +169,6 @@ const Artikel = () => {
                         <h1 className="mx-4 ">
                           02. {item.pencapaian.pencapaianDua}
                         </h1>
-                        {/* <div className="text-end mr-4">
-                          <Button
-                            className=""
-                            variant="contained"
-                            color="primary"
-                          >
-                            Pencapaian
-                          </Button>
-                        </div> */}
                       </div>
                       <div
                         data-aos="fade-up-right"
@@ -194,15 +180,6 @@ const Artikel = () => {
                         <h1 className="mx-4 ">
                           03. {item.pencapaian.pencapaianTiga}
                         </h1>
-                        {/* <div className="text-end mr-4">
-                          <Button
-                            className=""
-                            variant="contained"
-                            color="primary"
-                          >
-                            Pencapaian
-                          </Button>
-                        </div> */}
                       </div>
                       {item.pencapaian.pencapaianEmpat && (
                         <div
@@ -215,15 +192,6 @@ const Artikel = () => {
                           <h1 className="mx-4 ">
                             04. {item.pencapaian.pencapaianEmpat}
                           </h1>
-                          {/* <div className="text-end mr-4">
-                          <Button
-                            className=""
-                            variant="contained"
-                            color="primary"
-                          >
-                            Pencapaian
-                          </Button>
-                        </div> */}
                         </div>
                       )}
                       {item.pencapaian.pencapaianLima && (
@@ -237,15 +205,6 @@ const Artikel = () => {
                           <h1 className="mx-4 ">
                             05. {item.pencapaian.pencapaianLima}
                           </h1>
-                          {/* <div className="text-end mr-4">
-                              <Button
-                                className=""
-                                variant="contained"
-                                color="primary"
-                              >
-                                Pencapaian
-                              </Button>
-                            </div> */}
                         </div>
                       )}
                     </div>

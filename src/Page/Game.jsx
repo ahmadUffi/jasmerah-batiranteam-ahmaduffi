@@ -71,7 +71,7 @@ const Game = () => {
           >
             <div className="ml-3">
               <h1 className="inter font-extrabold tracking-wider text-xl">
-                Game 3
+                Game 4
               </h1>
             </div>
             <div className="ml-3 flex relative gap-5">
@@ -89,7 +89,7 @@ const Game = () => {
           >
             <div className="ml-3">
               <h1 className="inter font-extrabold tracking-wider text-xl">
-                Game 3
+                Game 5
               </h1>
             </div>
             <div className="ml-3 flex relative gap-5">
@@ -107,7 +107,7 @@ const Game = () => {
           >
             <div className="ml-3">
               <h1 className="inter font-extrabold tracking-wider text-xl">
-                Game 3
+                Game 6
               </h1>
             </div>
             <div className="ml-3 flex relative gap-5">
@@ -125,7 +125,7 @@ const Game = () => {
           >
             <div className="ml-3">
               <h1 className="inter font-extrabold tracking-wider text-xl">
-                Game 3
+                Game 7
               </h1>
             </div>
             <div className="ml-3 flex relative gap-5">

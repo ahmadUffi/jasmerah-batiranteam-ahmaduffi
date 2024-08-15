@@ -23,30 +23,33 @@ const Navbar = () => {
           } flex flex-col sm:flex-row sm:gap-[3rem] md:gap-[6rem]`}
         >
           <NavLink
+            onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
             to="/"
             className={({ isActive }) =>
-              `relative transition-colors duration-100 ease-linear hover:text-red-400 px-2 right-[-28px] rounded-br-[13px] ${
-                isActive ? "bg-red-700 text-white font-bold" : ""
+              ` homelink relative transition-colors duration-100 ease-linear hover:text-red-400 px-2 right-[-28px] rounded-lg   ${
+                isActive ? "bg-[#FF8343] text-white font-bold" : "navlink"
               }`
             }
           >
             Home
           </NavLink>
           <NavLink
+            onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
             to="/daftarpahlawan"
             className={({ isActive }) =>
-              `relative transition-colors duration-100 ease-linear hover:text-red-400 px-2 right-[-28px] rounded-br-[13px] ${
-                isActive ? "bg-red-700 text-white font-bold" : ""
+              `listlink relative transition-colors duration-100 ease-linear hover:text-red-400 px-2 right-0 rounded-lg ${
+                isActive ? "bg-[#FF8343] text-white font-bold " : "navlink"
               }`
             }
           >
             List Pahlawan
           </NavLink>
           <NavLink
+            onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
             to="/game"
             className={({ isActive }) =>
-              `relative transition-colors duration-100 ease-linear hover:text-red-400 px-2 right-[-28px] rounded-br-[13px] ${
-                isActive ? "bg-red-700 text-white font-bold" : ""
+              `gamelink relative transition-colors duration-100 ease-linear hover:text-red-400 px-2 right-[-28px] rounded-lg ${
+                isActive ? "bg-[#FF8343] text-white font-bold" : "navlink"
               }`
             }
           >

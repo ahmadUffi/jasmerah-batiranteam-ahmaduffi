@@ -13,8 +13,18 @@ const Hero = ({ hero }) => {
         </h1>
         <p className="text-justify"> {hero.biografi.paragrafSatu}</p>
         <div className="btn-wrapper flex gap-12 mt-8">
-          <button className="button">Details</button>
-          <Link to="/daftarpahlawan">
+          <button
+            className="button"
+            onClick={() => {
+              window.open(`/daftarpahlawan/${hero.nama}`, "_self");
+            }}
+          >
+            Details
+          </button>
+          <Link
+            to="/daftarpahlawan"
+            onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
+          >
             <button className="button">More Heroes</button>
           </Link>
         </div>
