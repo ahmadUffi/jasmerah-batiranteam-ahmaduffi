@@ -62,7 +62,7 @@ const Home = () => {
           </div>
         </Box>
       </div>
-      <div className="timeline mt-[30px]">
+      <div className="timeline mt-[30px] border-none">
         <div id="sejarahTimeline" className="h-[95px]" />
         <h1
           className="text-white mb-8 text-xl sm:text-2xl md:text-4xl text-center font-bol"

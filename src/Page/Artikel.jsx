@@ -34,7 +34,9 @@ const Artikel = () => {
                               </h1>
                             </div>
                           </div>
-                          <p className="pb-2">{item.biografi.paragrafSatu}</p>
+                          <p className="pb-2 text-justify">
+                            {item.biografi.paragrafSatu}
+                          </p>
                           <div className="lg:absolute lg:botom-0">
                             <p className="text-gray-500">Page 1</p>
                           </div>
@@ -42,20 +44,24 @@ const Artikel = () => {
                       </div>
                     </li>
 
-                    <li className="card" id="card1">
+                    <li className="card" id="card2">
                       <div className="card-body flex justify-center">
                         <div className="p-2 max-w-80 lg:max-w-96 mx-5 md:mx-0 lg:mx-0 py-8  inter">
-                          <p className="pb-2">{item.biografi.paragrafDua}</p>
+                          <p className="pb-2 text-justify">
+                            {item.biografi.paragrafDua}
+                          </p>
                           <div className="lg:absolute lg:botom-0">
                             <p className="text-gray-500">Page 2</p>
                           </div>
                         </div>
                       </div>
                     </li>
-                    <li className="card" id="card1">
+                    <li className="card" id="card3">
                       <div className="card-body flex justify-center">
                         <div className="p-2 max-w-80 lg:max-w-96 mx-5 md:mx-0 lg:mx-0 py-8  inter">
-                          <p className="pb-2">{item.biografi.paragrafTiga}</p>
+                          <p className="pb-2 text-justify">
+                            {item.biografi.paragrafTiga}
+                          </p>
                           <div className="lg:absolute lg:botom-0">
                             <p className="text-gray-500">Page 3</p>
                           </div>
@@ -67,7 +73,7 @@ const Artikel = () => {
                       <li className="card" id="card4">
                         <div className="card-body flex justify-center">
                           <div className="p-2 max-w-80 lg:max-w-96 mx-5 md:mx-0 lg:mx-0 py-8  inter">
-                            <p className="pb-2">
+                            <p className="pb-2 text-justify">
                               {item.biografi.paragrafEmpat}
                             </p>
                             <div className="lg:absolute lg:botom-0">
@@ -101,15 +107,15 @@ const Artikel = () => {
                     </h1>
                   </div>
                   <div
-                    className="sticky top-36 bg-cover  bg-center bg-no-repeat h-[24rem] w-[31rem] border border-[#232226] rounded-md"
+                    className="sticky top-36 object-cover bg-cover bg-center bg-no-repeat h-[24rem] w-[100%] border border-[#232226] rounded-md"
                     style={{ backgroundImage: `url(${item.gambarSatu})` }}
                   ></div>
                   <div
-                    className="sticky top-36 bg-cover  bg-center bg-no-repeat h-[24rem] w-[31rem] border border-[#232226] rounded-md"
+                    className=" sticky top-36 bg-cover  bg-center bg-no-repeat h-[24rem] w-[100%] border border-[#232226] rounded-md"
                     style={{ backgroundImage: `url(${item.gambarDua})` }}
                   ></div>
                   <div
-                    className="sticky top-36 bg-cover  bg-center bg-no-repeat h-[24rem] w-[31rem] border border-[#232226] rounded-md"
+                    className="sticky top-36 bg-cover  bg-center bg-no-repeat h-[24rem] w-[100%] border border-[#232226] rounded-md"
                     style={{ backgroundImage: `url(${item.gambarTiga})` }}
                   ></div>
                 </div>
@@ -127,10 +133,10 @@ const Artikel = () => {
                       data-aos-easing="ease-in-sine"
                       data-aos-duration="400"
                     >
-                      <h1 className=" text-5xl font-bold  uppercase inter tracking-widest -z-10 bg-gradient-to-r from-white  to-red-500 text-transparent bg-clip-text animate-gradient">
+                      <h1 className=" text-5xl font-bold  uppercase inter tracking-widest -z-10 bg-gradient-to-r from-white  to-red-500 text-transparent bg-clip-text animate-gradient text-center">
                         Pencapaian
                       </h1>
-                      <p>
+                      <p className="text-center">
                         {item.nama} adalah seorang pahlawan yang memiliki banyak
                         pencapaian, diantaranya:
                       </p>
@@ -142,7 +148,7 @@ const Artikel = () => {
                         data-aos-offset="200"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="600"
-                        className="filter blur-[0.5px] h-[4rem] w-[31rem] grid grid-cols-1 items-center bg-[#232226] rounded-md hover:bg-[#f4efe85e] hover:blur-none  transition-colors duration-100"
+                        className="filter blur-[0.5px] h-[4rem] w-[100%] grid grid-cols-1 items-center bg-[#232226] rounded-md hover:bg-[#f4efe85e] hover:blur-none  transition-colors duration-100"
                       >
                         <h1 className="mx-4 ">
                           01. {item.pencapaian.pencapaianSatu}
