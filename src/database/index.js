@@ -30,14 +30,24 @@ import CutNyakDienDua from "./CutNyakDien/GambarDua.jpg";
 import CutNyakDienTiga from "./CutNyakDien/GambarTiga.jpg";
 
 import RAKartiniSatu from "./RAKartini/GambarSatu.jpg";
+import RAKartiniDua from "./RAKartini/GambarDua.jpg";
+import RAKartiniTiga from "./RAKartini/GambarTiga.jpg";
 import TeukuUmarSatu from "./TeukuUmar/GambarSatu.jpeg";
+import TeukuUmarDua from "./TeukuUmar/GambarDua.png";
+import TeukuUmarTiga from "./TeukuUmar/GambarTiga.jpg";
 import DewiSartikaSatu from "./DewiSartika/GambarSatu.jpg";
+import DewiSartikaDua from "./DewiSartika/GambarDua.jpg";
+import DewiSartikaTiga from "./DewiSartika/GambarTiga.jpg";
 import KiHajarDewantaraSatu from "./KiHajarDewantara/GambarSatu.jpg";
+import KiHajarDewantaraDua from "./KiHajarDewantara/GambarDua.jpg";
+import KiHajarDewantaraTiga from "./KiHajarDewantara/GambarTiga.jpg";
 
 const biografis = [
   {
     id: 1,
     nama: "Soekarno",
+    quotes:
+      "Jadikan deritaku ini sebagai kesaksian bahwa kekuasaan seorang Presiden sekalipun ada batasnya. Karena kekuasaan yang langgeng hanya kekuasaan rakyat. Dan diatas segalanya adalah Kekuasaan Tuhan Yang Maha Esa.",
     biografi: {
       paragrafSatu:
         "Soekarno, lahir pada 6 Juni 1901 di Surabaya, adalah salah satu tokoh terpenting dalam sejarah Indonesia. Ia dikenal sebagai proklamator kemerdekaan Indonesia dan Presiden pertama Republik Indonesia. Soekarno merupakan anak dari seorang guru, Raden Soekemi Sosrodihardjo, dan Ida Ayu Nyoman Rai, seorang bangsawan Bali. Ia tumbuh dalam keluarga yang sangat memperhatikan pendidikan, sehingga sejak kecil Soekarno sudah menunjukkan kecerdasan luar biasa.",
@@ -65,6 +75,8 @@ const biografis = [
   {
     id: 2,
     nama: "Mohammad Hatta",
+    quotes:
+      "Membangun Indonesia yang adil dan Indonesia makmur harus dilakukan dengan rasa tanggung jawab serta keberanian menghadapi segala kesukaran. Pokok kemauan dan keberanian itu terletak pada cinta akan kebenaran dan keadilan, sebagai pembawaan orang berilmu cinta akan suatu cita-cita besar yang menjadi penyuluh harapan bangsa.",
     biografi: {
       paragrafSatu:
         "Mohammad Hatta, lahir pada 12 Agustus 1902 di Bukittinggi, Sumatera Barat, adalah seorang ekonom, politisi, dan Proklamator Kemerdekaan Indonesia. Dikenal sebagai “Bapak Koperasi Indonesia,” Hatta merupakan salah satu tokoh yang berperan penting dalam pergerakan kemerdekaan Indonesia bersama Soekarno. Ia tumbuh dalam keluarga yang menjunjung tinggi pendidikan, sehingga sejak usia muda, Hatta sudah menunjukkan kecintaan terhadap ilmu pengetahuan.",
@@ -90,6 +102,8 @@ const biografis = [
   {
     id: 3,
     nama: "Sultan Hasanuddin",
+    quotes:
+      "Bila kami diserang, maka kami akan mempertahankan diri dan menyerang kembali dengan segenap kemampuan yang ada. Kami berada di pihak yang benar. Kami ingin mempertahankan kebenaran dan kemerdekaan negeri kami.",
     biografi: {
       paragrafSatu:
         "Sultan Hasanuddin lahir pada 12 Januari 1631 di Gowa, Sulawesi Selatan. Ia adalah Sultan Kerajaan Gowa ke-16 yang dikenal sebagai 'Ayam Jantan dari Timur' karena keberaniannya melawan penjajah Belanda. Sebagai seorang pemimpin, Sultan Hasanuddin sangat dihormati oleh rakyatnya karena keberaniannya dalam mempertahankan kedaulatan Kerajaan Gowa dari penjajah yang ingin menguasai wilayah tersebut.",
@@ -120,6 +134,8 @@ const biografis = [
   {
     id: 4,
     nama: "Pangeran Diponegoro",
+    quotes:
+      "Aku adalah pejuang! Sebagai pejuang, tugasku adalah berjuang. Soal kalah atau menang, itu bukan urusanku, karena tugasku adalah berjuang!",
     biografi: {
       paragrafSatu:
         "Pangeran Diponegoro, lahir pada 11 November 1785 di Yogyakarta, adalah salah satu pahlawan nasional Indonesia yang paling dikenal karena perjuangannya melawan penjajahan Belanda.",
@@ -149,6 +165,8 @@ const biografis = [
   {
     id: 5,
     nama: "Cut Nyak Dien",
+    quotes:
+      "Saat terbaik untuk membuktikan bahwa kita adalah pemenang yaitu saat ketika kita tampak kalah.",
     biografi: {
       paragrafSatu:
         "Cut Nyak Dien, lahir pada tahun 1848 di Aceh, adalah seorang pahlawan wanita yang dikenal karena perjuangannya melawan penjajahan Belanda di Aceh.",
@@ -177,6 +195,8 @@ const biografis = [
   {
     id: 6,
     nama: "R.A. Kartini",
+    quotes:
+      "Seorang perempuan yang mengorbankan diri untuk orang lain, dengan segala rasa cinta yang ada dalam hatinya, dengan segala bakti, yang dapat diamalkannya, itulah perempuan yang patut disebut sebagai &quot;ibu&quot; dalam arti sebenarnya.",
     biografi: {
       paragrafSatu:
         "Raden Adjeng Kartini, lahir pada 21 April 1879 di Jepara, Jawa Tengah, adalah seorang tokoh emansipasi wanita Indonesia.",
@@ -199,12 +219,14 @@ const biografis = [
       pencapaianLima: "",
     },
     gambarSatu: RAKartiniSatu,
-    gambarDua: "",
-    gambarTiga: "",
+    gambarDua: RAKartiniDua,
+    gambarTiga: RAKartiniTiga,
   },
   {
     id: 7,
     nama: "Teuku Umar",
+    quotes:
+      "Hidup ini sepele. Kalau besok mati berarti aku syahid, kalau besok pagi hidup aku akan minum kopi.",
     biografi: {
       paragrafSatu:
         "Teuku Umar, lahir pada tahun 1854 di Meulaboh, Aceh, adalah seorang pahlawan nasional yang dikenal karena perjuangannya melawan penjajahan Belanda di Aceh. Ia lahir dalam keluarga bangsawan dan sejak muda sudah menunjukkan keberanian dan kecerdikan dalam berperang. Teuku Umar menjadi terkenal karena taktik perang gerilya yang digunakannya dalam melawan Belanda.",
@@ -224,12 +246,14 @@ const biografis = [
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
     },
     gambarSatu: TeukuUmarSatu,
-    gambarDua: "",
-    gambarTiga: "",
+    gambarDua: TeukuUmarDua,
+    gambarTiga: TeukuUmarTiga,
   },
   {
     id: 8,
     nama: "Dewi Sartika",
+    quotes:
+      "Di samping pendidikan yang baik, perempuan bumiputra harus dibekali pelajaran yang bermutu. Perluasan pengetahuan akan sangat berpengaruh bagi moral kaum perempuan bumiputra. Pengetahuan tersebut hanya diperolehnya dari sekolah.",
     biografi: {
       paragrafSatu:
         "Dewi Sartika, lahir pada 4 Desember 1884 di Bandung, Jawa Barat, adalah seorang pelopor pendidikan untuk wanita di Indonesia. Ia lahir dalam keluarga bangsawan Sunda, dan meskipun mendapatkan pendidikan yang baik, ia sadar bahwa kebanyakan wanita di zamannya tidak memiliki akses yang sama terhadap pendidikan. Hal ini memotivasi Dewi Sartika untuk memperjuangkan pendidikan bagi wanita.",
@@ -251,12 +275,14 @@ const biografis = [
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
     },
     gambarSatu: DewiSartikaSatu,
-    gambarDua: "",
-    gambarTiga: "",
+    gambarDua: DewiSartikaDua,
+    gambarTiga: DewiSartikaTiga,
   },
   {
     id: 9,
     nama: "Ki Hajar Dewantara",
+    quotes:
+      "Kalau suatu ketika ada orang meminta pendapatmu,apakah Ki Hadjar itu seorang nasionalis, radikalis, sosialis, demokrat, humanis, ataukah tradisionalis, maka katakanlah bahwaaku hanyalah orang Indonesia biasa saja yang bekerja untuk bangsa Indonesia dengan cara Indonesia.",
     biografi: {
       paragrafSatu:
         "Ki Hajar Dewantara, lahir dengan nama Raden Mas Soewardi Soerjaningrat pada 2 Mei 1889 di Yogyakarta, adalah tokoh pendidikan yang sangat berpengaruh di Indonesia. Ia dikenal sebagai Bapak Pendidikan Nasional Indonesia karena peran pentingnya dalam memperjuangkan pendidikan bagi semua golongan masyarakat, terutama mereka yang tidak mampu. Sejak muda, Ki Hajar Dewantara sangat peduli terhadap masalah sosial dan ketidakadilan yang terjadi di masyarakat.",
@@ -278,12 +304,13 @@ const biografis = [
         "Diberi gelar Pahlawan Nasional oleh pemerintah Indonesia.",
     },
     gambarSatu: KiHajarDewantaraSatu,
-    gambarDua: "",
-    gambarTiga: "",
+    gambarDua: KiHajarDewantaraDua,
+    gambarTiga: KiHajarDewantaraTiga,
   },
   {
     id: 10,
     nama: "Sultan Agung",
+    quotes: "Mukti utawa Mati!",
     biografi: {
       paragrafSatu:
         "Sultan Agung, lahir pada tahun 1593 di Kotagede, adalah Sultan Mataram yang paling terkenal dalam sejarah Indonesia. Ia memerintah Kesultanan Mataram dari tahun 1613 hingga 1645 dan dikenal karena usahanya untuk menyatukan Pulau Jawa di bawah kekuasaan Mataram. Sultan Agung adalah seorang pemimpin yang tangguh, baik dalam bidang militer maupun pemerintahan, dan ia memiliki visi untuk menjadikan Mataram sebagai kerajaan yang kuat dan berdaulat.",
@@ -310,6 +337,8 @@ const biografis = [
   {
     id: 11,
     nama: "Cut Nyak Meutia",
+    quotes:
+      "Penyerahan pimpinan itu aku terima dengan penuh tanggung jawab pada agama dan negeri kita. Akan tetapi, bila pimpinanku kurang sempurna supaya cepat ditegur sehingga segala urusan dapat berjalan lancar dan baik dan supaya kita semua seiya sekata, bersatu hati, dan tidak terpecah belah.",
     biografi: {
       paragrafSatu:
         "Cut Nyak Meutia, lahir pada 15 Februari 1870 di Keureutoe, Aceh, adalah seorang pahlawan wanita yang terkenal karena perlawanan gerilyanya melawan Belanda di Aceh. Ia berasal dari keluarga bangsawan Aceh dan sejak muda sudah menunjukkan keberanian dalam melawan penjajah. Ketika suaminya, Teuku Muhammad, terbunuh oleh Belanda, Cut Nyak Meutia memutuskan untuk melanjutkan perjuangan dan memimpin pasukan gerilya.",
@@ -334,7 +363,8 @@ const biografis = [
   },
   {
     id: 12,
-    nama: "Singamangaraja XII",
+    nama: "Sisingamangaraja XII",
+    quotes: "Ahu Sisingamangaraja",
     biografi: {
       paragrafSatu:
         "Sisingamangaraja XII, lahir pada 18 Februari 1845 di Bakkara, Tapanuli, adalah raja Batak terakhir yang memimpin perlawanan terhadap kolonialisme Belanda di Sumatera Utara. Sisingamangaraja XII mewarisi gelar raja dari ayahnya pada tahun 1876 dan dengan cepat dikenal sebagai pemimpin yang karismatik dan tangguh.",
@@ -361,6 +391,8 @@ const biografis = [
   {
     id: 13,
     nama: "Pattimura",
+    quotes:
+      "Pattimura-pattimura tua boleh dihancurkan, tetapi kelak Pattimurapattimura muda akan bangkit.",
     biografi: {
       paragrafSatu:
         "Thomas Matulessy, lebih dikenal sebagai Pattimura, lahir pada 8 Juni 1783 di Haria, Maluku, adalah seorang pahlawan nasional Indonesia yang memimpin perlawanan rakyat Maluku terhadap penjajah Belanda. Pattimura berasal dari keluarga bangsawan dan sejak muda sudah menunjukkan kepemimpinan yang kuat.",
@@ -385,6 +417,8 @@ const biografis = [
   {
     id: 14,
     nama: "I Gusti Ngurah Rai",
+    quotes:
+      "Kami sanggup dan berjanji bertempur terus hingga cita-cita tercapai",
     biografi: {
       paragrafSatu:
         "I Gusti Ngurah Rai, lahir pada 30 Januari 1917 di Desa Carangsari, Bali, adalah seorang pahlawan nasional Indonesia yang terkenal karena perjuangannya melawan penjajah Belanda di Bali. Ia menempuh pendidikan militer di Belanda dan Jepang sebelum kembali ke Indonesia untuk ikut serta dalam perjuangan kemerdekaan.",
