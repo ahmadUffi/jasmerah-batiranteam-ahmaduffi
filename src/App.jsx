@@ -6,6 +6,7 @@ import Pahlawan from "./Page/Pahlawan";
 import Game from "./Page/Game";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Susunkata from "./Page/GameList/Susunkata";
 function App() {
   return (
     <>
@@ -15,7 +16,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/daftarpahlawan" element={<Pahlawan />} />
           <Route path="/daftarpahlawan/:namapahlawan" element={<Artikel />} />
-          <Route path="/about" element={<Game />} />
+          <Route path="/game" element={<Game />} />
+          <Route path="/game/:id" element={<Susunkata />} />
         </Routes>
         <Footer />
       </BrowserRouter>
