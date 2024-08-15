@@ -11,6 +11,7 @@ const MemoryCard = () => {
   const [buttonText, setButtonText] = useState("Start Game");
   const [showModal, setShowModal] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
+  const [modalRules, setModalRules] = useState(true);
   const cardRefs = useRef([]);
 
   let matchedCard = 0;
@@ -152,6 +153,43 @@ const MemoryCard = () => {
           </Button>
         </div>
       </div>
+      {modalRules && (
+        <Modal>
+          <>
+            <div className="overlay">
+              <div className="container w-[600px] p-3 rounded-lg text-center bg-white">
+                <h1 className="font-semibold ">Peraturan Game</h1>
+                <ul className="text-start">
+                  <li>
+                    1. Kamu harus menyamakan gambar pahlawan yang ada di kartu
+                  </li>
+                  <li>
+                    2 gambar sistem akan mengecek gambar apakah cocok atau tidak
+                    jika tidak kamu harus mencari gambar yng cocok
+                  </li>
+                  <li>
+                    3. Jika kamu berhasil menyamakan semua gambar dalam waktu 30
+                    detik maka kamu menang
+                  </li>
+                  <li>
+                    {" "}
+                    4. Jika kamu tidak berhasil menyamakan semua gambar dalam
+                    waktu 30 detik maka kamu kalah
+                  </li>
+                  <li> 5. Selamat bermain!</li>
+                </ul>
+                <button
+                  className="py-1 px-3 bg-[#FF8343] mt-3 rounded-md font-semibold cursor-pointer"
+                  onClick={() => setModalRules(false)}
+                >
+                  Lanjut main
+                </button>
+              </div>
+            </div>
+          </>
+        </Modal>
+      )}
+
       {showModal && (
         <Modal>
           <>
