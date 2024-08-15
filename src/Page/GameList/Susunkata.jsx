@@ -13,6 +13,7 @@ const Susunkata = () => {
   const [modal, setModal] = useState(false);
   const [mulai, setMulai] = useState(false);
   const [pesan, setPesan] = useState("");
+  const [modalRules, setModalRules] = useState(true);
   const timerRef = useRef(null);
 
   // waktu
@@ -133,6 +134,62 @@ const Susunkata = () => {
           </div>
         </div>
       </div>
+      {modalRules && (
+        <Modal>
+          <>
+            <div className="overlay">
+              <div className="container w-[600px] p-3 rounded-lg text-center bg-white">
+                <h1 className="font-semibold ">Peraturan Game</h1>
+                <ul className="text-start">
+                  <li>
+                    1. Klik tombol &quot;Mulai&quot; untuk memulai permainan.
+                  </li>
+                  <li>
+                    2. Setelah permainan dimulai, Anda akan melihat huruf-huruf
+                    yang diacak.
+                  </li>
+                  <li>
+                    3. Susun huruf-huruf tersebut menjadi kata yang benar
+                    berdasarkan petunjuk yang diberikan.
+                  </li>
+                  <li>
+                    {" "}
+                    4. Anda memiliki waktu 30 detik untuk menyelesaikan
+                    tantangan.
+                  </li>
+                  <li>
+                    {" "}
+                    5. Jika waktu habis atau kata yang Anda masukkan salah, Anda
+                    akan menerima pesan bahwa waktu habis atau jawaban salah.
+                  </li>
+                  <li>
+                    {" "}
+                    6. Klik &quot;Cek Jawaban&quot; untuk memeriksa apakah
+                    jawaban Anda benar.
+                  </li>
+                  <li>
+                    {" "}
+                    7. Jika jawaban benar, Anda akan menerima pesan
+                    keberhasilan.
+                  </li>
+                  <li>
+                    {" "}
+                    8. Setelah pesan ditampilkan, klik &quot;Close&quot; untuk
+                    menutup pesan dan memulai permainan baru.
+                  </li>
+                </ul>
+                <button
+                  className="py-1 px-3 bg-[#FF8343] mt-3 rounded-md font-semibold cursor-pointer"
+                  onClick={() => setModalRules(false)}
+                >
+                  Lanjut main
+                </button>
+              </div>
+            </div>
+          </>
+        </Modal>
+      )}
+
       {modal && (
         <Modal>
           <>

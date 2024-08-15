@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Susunkata from "./Page/GameList/Susunkata";
 import MemoryCard from "./Page/GameList/MemoryCard";
+
 function App() {
   return (
     <>
