@@ -108,7 +108,11 @@ const Artikel = () => {
                   </div>
 
                   <div
+
+                  
+
                     className="sticky top-36 object-cover bg-cover bg-center bg-no-repeat h-[24rem] w-[100%] border border-[#232226] rounded-md"
+
                     style={{ backgroundImage: `url(${item.gambarSatu})` }}
                   ></div>
                   <div
