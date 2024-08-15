@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./MemoryCard.css";
 import { Button } from "@mui/material";
 import Modal from "../../modal/Modal";
+import ButtonComponent from "../../components/ButtonComponent";
 
 const MemoryCard = () => {
   const [timer, setTimer] = useState(30);
@@ -14,11 +15,10 @@ const MemoryCard = () => {
 
   let matchedCard = 0;
   let cardOne, cardTwo;
-  let disabledDeck = true;
+  let disabledDeck = false;
 
   useEffect(() => {
     if (timer === 0) {
-      cardRefs.current.forEach((card) => card.classList.remove("flip"));
       setGameOver(true);
       setButtonText("Coba Lagi!");
       return;
@@ -140,7 +140,7 @@ const MemoryCard = () => {
       </div>
       <div className="flex flex-row text-black items-center bg-[#f8f8f8] rounded-md p-1 md:px-4 gap-2 md:gap5 divide-x">
         <div>
-          <p>Flips: {gameOver ? gameOver : flips}</p>
+          <p>Flips: {flips}</p>
           {gameOver && <p>Duh kmu gagal, tapi bisa coba lagi kok!</p>}
         </div>
         <div className="game-info pl-3">
@@ -171,6 +171,8 @@ const MemoryCard = () => {
           </>
         </Modal>
       )}
+
+      <ButtonComponent link={"/game"} text={"kembali"} />
     </div>
   );
 };

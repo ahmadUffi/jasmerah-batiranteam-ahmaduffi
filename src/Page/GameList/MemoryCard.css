@@ -1,25 +1,24 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 .MemoBody {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background: #6563ff;
 }
-
 .wrapper {
-  height: 400px;
-  width: 400px;
-  background: #f8f8f8;
-  border-radius: 10px;
   padding: 25px;
+  border-radius: 10px;
+  background: #f8f8f8;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-
-@media screen and (max-width: 768px) {
-  .wrapper {
-    height: 350px;
-    width: 350px;
-  }
-}
-
 .MemoCards,
 .MemoCard,
 .view {
@@ -27,27 +26,25 @@
   align-items: center;
   justify-content: center;
 }
-
 .MemoCards {
-  height: 100%;
-  width: 100%;
+  height: 400px;
+  width: 400px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .MemoCards .MemoCard {
   cursor: pointer;
+  list-style: none;
+  user-select: none;
   position: relative;
-  perspective: 800px;
-  transform-style: preserve-3d; /* Pastikan properti ini ada */
+  perspective: 1000px;
+  transform-style: preserve-3d;
   height: calc(100% / 4 - 10px);
   width: calc(100% / 4 - 10px);
 }
-
 .MemoCard.shake {
   animation: shake 0.35s ease-in-out;
 }
-
 @keyframes shake {
   0%,
   100% {
@@ -66,40 +63,55 @@
     transform: translateX(8px);
   }
 }
-
-.MemoCards .MemoCard .view {
+.MemoCard .view {
   width: 100%;
   height: 100%;
-  user-select: none;
-  pointer-events: none;
   position: absolute;
-  background: #fff;
   border-radius: 7px;
+  background: #fff;
+  pointer-events: none;
+  backface-visibility: hidden;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  backface-visibility: hidden; /* Menyembunyikan sisi belakang */
-  transition: transform 0.5s ease; /* Animasi untuk transisi rotasi */
+  transition: transform 0.25s linear;
 }
-
-.MemoCard .front-view span {
-  color: #ff8343;
-  font-size: 40px;
+.MemoCard .front-view img {
+  width: 19px;
 }
-.MemoCard .front-view {
-  transform: rotateY(0deg); /* Posisi awal */
-}
-
-.MemoCard .back-view {
-  transform: rotateY(-180deg); /* Posisi sisi belakang */
-}
-
 .MemoCard .back-view img {
   max-width: 45px;
 }
-
+.MemoCard .back-view {
+  transform: rotateY(-180deg);
+}
+.MemoCard.flip .back-view {
+  transform: rotateY(0);
+}
 .MemoCard.flip .front-view {
-  transform: rotateY(180deg); /* Flip sisi depan */
+  transform: rotateY(180deg);
 }
 
-.MemoCard.flip .back-view {
-  transform: rotateY(0deg); /* Flip sisi belakang */
+@media screen and (max-width: 700px) {
+  .MemoCards {
+    height: 350px;
+    width: 350px;
+  }
+  .MemoCard .front-view img {
+    width: 17px;
+  }
+  .MemoCard .back-view img {
+    max-width: 40px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .MemoCards {
+    height: 300px;
+    width: 300px;
+  }
+  .MemoCard .front-view img {
+    width: 15px;
+  }
+  .MemoCard .back-view img {
+    max-width: 35px;
+  }
 }
