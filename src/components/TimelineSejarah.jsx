@@ -44,7 +44,7 @@ const TimelineSejarah = ({ data }) => {
         </div>
         <button
           type="button"
-          className="box-3d text-black p-2 px-3 font-bold mt-3"
+          className="box-3d text-black p-2 px-3 font-bold mt-3 ml-4"
         >
           Detail
         </button>
