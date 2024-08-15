@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./MemoryCard.css";
 import { Button } from "@mui/material";
 import Modal from "../../modal/Modal";
-import ButtonComponent from "../../components/ButtonComponent";
+import ButtonComponent from "../../components/Button";
 
 const MemoryCard = () => {
   const [timer, setTimer] = useState(30);

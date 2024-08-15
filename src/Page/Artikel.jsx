@@ -4,6 +4,7 @@ import "./Artikel.css";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ButtonComponent from "../components/Button";
 
 const Artikel = () => {
   const { namapahlawan } = useParams();
@@ -222,12 +223,14 @@ const Artikel = () => {
                     </blockquote>
                   </div>
                 </div>
-                <div></div>
               </div>
             </div>
           );
         }
       })}
+      <div className="wrap mt-[-600px]">
+        <ButtonComponent text={"Kembali"} link={"/daftarpahlawan"} />
+      </div>
     </section>
   );
 };
