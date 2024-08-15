@@ -1,0 +1,44 @@
+.glassmorp {
+  background: #ffffff14;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid #ffffff1f;
+}
+
+/* grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    text-align: left;
+    cursor: pointer;
+    background-color: #ffffff14;
+    border: 1px solid #ffffff1f;
+    border-radius: 12px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr minmax(32px, 32px);
+    grid-auto-columns: 1fr;
+    padding: 32px 24px;
+    transition: background-color .2s;
+    display: grid; */
+
+.arrow {
+  background-color: #ffffff14;
+  padding: 6px;
+  border-radius: 99px;
+}
+
+.box-active:hover {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background: #ffffff30;
+  border: 1px solid #ffffff1f;
+  transition: background 0.2s ease-in-out;
+  .arrow {
+    transform: translateX(4px);
+    transition: all 0.2s ease-in-out;
+    color: black;
+    background-color: #fff;
+  }
+}

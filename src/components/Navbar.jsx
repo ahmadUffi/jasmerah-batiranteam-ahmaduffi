@@ -54,7 +54,7 @@ const Navbar = () => {
           </NavLink>
         </div>
         <div className={`${active ? "btn active" : "btn"}`}>
-          <button className="">SingUp</button>
+          <button className="">SignUp</button>
         </div>
       </div>
 

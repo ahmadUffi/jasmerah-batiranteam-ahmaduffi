@@ -156,11 +156,11 @@
 
 @media screen and (max-width: 760px) {
   #cards {
-    gap: 10rem;
+    gap: 20rem;
   }
   .card-body {
-    height: 500px;
-    width: 400px;
+    height: 550px;
+    width: 300px;
   }
 }
 @media screen and (min-width: 770px) {

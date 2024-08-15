@@ -5,12 +5,12 @@ import { FaMessage } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="h-full w-screen text-white bg-[#0A090D] inter grid grid-cols-1 gap-10 divide-y divide-gray-600 border-t-2 border-gray-500">
-      <div className="h-full grid grid-cols-2 md:grid-cols-3">
+      <div className="h-full grid grid-cols-2 md:grid-cols-3 place-content-between">
         <div className="flex flex-col mx-5">
           <img src="/Jasmerah.svg" alt="" className="w-[8rem]" />
           {/* <span className="inter -mt-5">Lorem ipsum dolor sit amet.</span> */}
         </div>
-        <div className="w-full flex flex-col justify-center items-center gap-2">
+        <div className="w-full flex flex-col justify-center items-center gap-2 pt-2">
           <div className="w-full">
             <h3 className="text-sm max-w-72">
               Berikan masukan atau saranmu melewati email kami!
@@ -20,30 +20,34 @@ const Footer = () => {
             action="mailto:whyramadhan27@gmail.com"
             method="post"
             encType="text/plain"
-            className="flex gap-3  w-full text-white"
+            className="flex flex-col md:flex-row gap-3 w-full text-white"
           >
-            <input
-              type="text"
-              minLength="5"
-              placeholder="berikan masukan atau saran..."
-              name="msg"
-              autoSave="off"
-              id="msg"
-              className="border border-gray-500 rounded-md bg-transparent text-gray-500 p-2"
-            />
+            <div>
+              <input
+                type="text"
+                minLength="5"
+                placeholder="berikan masukan atau saran..."
+                name="msg"
+                autoSave="off"
+                id="msg"
+                className=" border border-gray-500 rounded-md bg-transparent text-gray-500 p-2 w-40"
+              />
+            </div>
 
-            <button
-              className="bg-gray-600 px-5 rounded-md"
-              type="submit"
-              // onClick={() => {
-              //   confirm("Terima kasih atas masukan atau saran anda");
-              // }}
-            >
-              Kirim
-            </button>
+            <div>
+              <button
+                className="bg-gray-600 px-10 py-2 rounded-md"
+                type="submit"
+                // onClick={() => {
+                //   confirm("Terima kasih atas masukan atau saran anda");
+                // }}
+              >
+                Kirim
+              </button>
+            </div>
           </form>
         </div>
-        <div className="w-full flex justify-center items-center">
+        <div className="w-full flex items-center ml-4">
           <div className="flex flex-col divide-y-2 divide-red-400">
             <span className="tracking-wide">Follow Kita</span>
             {/* logo github */}

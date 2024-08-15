@@ -1,0 +1,105 @@
+.MemoBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  height: 400px;
+  width: 400px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+.MemoCards,
+.MemoCard,
+.view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MemoCards {
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.MemoCards .MemoCard {
+  cursor: pointer;
+  position: relative;
+  perspective: 800px;
+  transform-style: preserve-3d; /* Pastikan properti ini ada */
+  height: calc(100% / 4 - 10px);
+  width: calc(100% / 4 - 10px);
+}
+
+.MemoCard.shake {
+  animation: shake 0.35s ease-in-out;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-13px);
+  }
+  40% {
+    transform: translateX(13px);
+  }
+  60% {
+    transform: translateX(-8px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+}
+
+.MemoCards .MemoCard .view {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden; /* Menyembunyikan sisi belakang */
+  transition: transform 0.5s ease; /* Animasi untuk transisi rotasi */
+}
+
+.MemoCard .front-view span {
+  color: #ff8343;
+  font-size: 40px;
+}
+.MemoCard .front-view {
+  transform: rotateY(0deg); /* Posisi awal */
+}
+
+.MemoCard .back-view {
+  transform: rotateY(-180deg); /* Posisi sisi belakang */
+}
+
+.MemoCard .back-view img {
+  max-width: 45px;
+}
+
+.MemoCard.flip .front-view {
+  transform: rotateY(180deg); /* Flip sisi depan */
+}
+
+.MemoCard.flip .back-view {
+  transform: rotateY(0deg); /* Flip sisi belakang */
+}

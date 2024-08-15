@@ -96,20 +96,20 @@ const Artikel = () => {
 
                 <div className="md:flex md:flex-col md:-z-10 gap-[30rem] pt-36">
                   <div className="pb-5 sticky top-20 md:hidden">
-                    <h1 className="text-3xl inter tracking-wide z-50 font-semibold ">
+                    <h1 className="text-xl max-w-80 text-center md:text-4xl inter tracking-wide z-50 font-semibold ">
                       Beberapa foto dari {item.nama}
                     </h1>
                   </div>
                   <div
-                    className="sticky top-36 bg-cover  bg-center bg-no-repeat h-[24rem] w-[31rem] border border-[#232226] rounded-md"
+                    className="sticky top-36 bg-cover  bg-center bg-no-repeat h-[20rem] w-[20rem] border border-[#232226] rounded-md"
                     style={{ backgroundImage: `url(${item.gambarSatu})` }}
                   ></div>
                   <div
-                    className="sticky top-36 bg-cover  bg-center bg-no-repeat h-[24rem] w-[31rem] border border-[#232226] rounded-md"
+                    className="sticky top-36 bg-cover  bg-center bg-no-repeat h-[20rem] w-[20rem] border border-[#232226] rounded-md"
                     style={{ backgroundImage: `url(${item.gambarDua})` }}
                   ></div>
                   <div
-                    className="sticky top-36 bg-cover  bg-center bg-no-repeat h-[24rem] w-[31rem] border border-[#232226] rounded-md"
+                    className="sticky top-36 bg-cover  bg-center bg-no-repeat h-[20rem] w-[20rem] border border-[#232226] rounded-md"
                     style={{ backgroundImage: `url(${item.gambarTiga})` }}
                   ></div>
                 </div>
@@ -127,10 +127,10 @@ const Artikel = () => {
                       data-aos-easing="ease-in-sine"
                       data-aos-duration="400"
                     >
-                      <h1 className=" text-5xl font-bold  uppercase inter tracking-widest -z-10 bg-gradient-to-r from-white  to-red-500 text-transparent bg-clip-text animate-gradient">
+                      <h1 className=" text-5xl font-bold text-center  uppercase inter tracking-widest -z-10 bg-gradient-to-r from-white  to-red-500 text-transparent bg-clip-text animate-gradient">
                         Pencapaian
                       </h1>
-                      <p>
+                      <p className="text-center">
                         {item.nama} adalah seorang pahlawan yang memiliki banyak
                         pencapaian, diantaranya:
                       </p>
@@ -142,9 +142,9 @@ const Artikel = () => {
                         data-aos-offset="200"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="600"
-                        className="filter blur-[0.5px] h-[4rem] w-[31rem] grid grid-cols-1 items-center bg-[#232226] rounded-md hover:bg-[#f4efe85e] hover:blur-none  transition-colors duration-100"
+                        className="filter blur-[0.5px] h-[4rem] w-[20rem] md:w-[30rem] grid grid-cols-1 items-center bg-[#232226]  rounded-md hover:bg-[#f4efe85e] hover:blur-none  transition-colors duration-100"
                       >
-                        <h1 className="mx-4 ">
+                        <h1 className="mx-4">
                           01. {item.pencapaian.pencapaianSatu}
                         </h1>
                         {/* <div className="text-end mr-4">
@@ -162,7 +162,7 @@ const Artikel = () => {
                         data-aos-offset="200"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="800"
-                        className="md:mt-[5rem] filter blur-[0.5px] hover:blur-none h-[4rem] w-[31rem] grid grid-cols-1 items-center bg-[#232226] rounded-md hover:bg-[#f4efe85e]  transition-colors duration-100"
+                        className="md:mt-[5rem] filter blur-[0.5px] hover:blur-none h-[4rem] w-[20rem] md:w-[30rem] grid grid-cols-1 items-center bg-[#232226]  rounded-md hover:bg-[#f4efe85e]  transition-colors duration-100"
                       >
                         <h1 className="mx-4 ">
                           02. {item.pencapaian.pencapaianDua}
@@ -182,7 +182,7 @@ const Artikel = () => {
                         data-aos-offset="200"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="600"
-                        className="filter blur-[0.5px] hover:blur-none h-[4rem] w-[31rem] grid grid-cols-1 items-center bg-[#232226] rounded-md hover:bg-[#f4efe85e]  transition-colors duration-100"
+                        className="filter blur-[0.5px] hover:blur-none h-[4rem] w-[20rem] md:w-[30rem] grid grid-cols-1 items-center bg-[#232226]  rounded-md hover:bg-[#f4efe85e]  transition-colors duration-100"
                       >
                         <h1 className="mx-4 ">
                           03. {item.pencapaian.pencapaianTiga}
@@ -203,7 +203,7 @@ const Artikel = () => {
                           data-aos-offset="200"
                           data-aos-easing="ease-in-sine"
                           data-aos-duration="800"
-                          className="md:mt-[5rem] filter blur-[0.5px] hover:blur-none h-[4rem] w-[31rem] grid grid-cols-1 items-center bg-[#232226] rounded-md hover:bg-[#f4efe85e]  transition-colors duration-100"
+                          className="md:mt-[5rem] filter blur-[0.5px] hover:blur-none h-[4rem] w-[20rem] md:w-[30rem] grid grid-cols-1 items-center bg-[#232226]  rounded-md hover:bg-[#f4efe85e]  transition-colors duration-100"
                         >
                           <h1 className="mx-4 ">
                             04. {item.pencapaian.pencapaianEmpat}
@@ -225,7 +225,7 @@ const Artikel = () => {
                           data-aos-offset="200"
                           data-aos-easing="ease-in-sine"
                           data-aos-duration="800"
-                          className="md:mt-[5rem] filter blur-[0.5px] hover:blur-none h-[4rem] w-[31rem] grid grid-cols-1 items-center bg-[#232226] rounded-md hover:bg-[#f4efe85e]  transition-colors duration-100"
+                          className="md:mt-[5rem] filter blur-[0.5px] hover:blur-none h-[4rem] w-[20rem] md:w-[30rem] grid grid-cols-1 items-center bg-[#232226]  rounded-md hover:bg-[#f4efe85e]  transition-colors duration-100"
                         >
                           <h1 className="mx-4 ">
                             05. {item.pencapaian.pencapaianLima}
